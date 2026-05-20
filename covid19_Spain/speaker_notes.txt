@@ -1,0 +1,155 @@
+SPEAKER NOTES — COVID-19 in Spain (DAV 2026)
+~10 minutes total | 19 slides | ~30 seconds per slide
+============================================================
+
+
+SLIDE 1 — Title
+---------------
+Our project analyzes COVID-19 in Spain, with Poland as a comparison throughout.
+Spain was one of the hardest hit countries in Europe in the first wave, but also
+had one of the fastest vaccination campaigns and a distinct regional structure.
+We'll cover descriptive trends, regional heterogeneity, economics, and inferential
+models — roughly 30 seconds per slide.
+
+
+SLIDE 2 — Daily cases
+---------------------
+Spain's first wave hit hard and fast — weeks before Poland saw significant spread.
+Spain's waves are sharper overall, reflecting denser cities and early international
+travel. Poland's tend to be flatter but longer. Both went through roughly five to
+six waves, but timing and scale differ sharply.
+
+
+SLIDE 3 — Daily deaths
+----------------------
+Spain's April 2020 peak was one of the highest in Europe per capita — over 120,000
+official deaths by end of 2024, at 342 per 100,000 population. The vertical lines
+mark policy events — deaths fell a few weeks after the state of alarm. From 2021
+the peaks flatten with vaccination. Poland's per-capita toll was actually higher
+in the later waves.
+
+
+SLIDE 4 — Excess mortality vs reported deaths
+---------------------------------------------
+This compares official COVID deaths to excess mortality — deaths above what we'd
+expect in a normal year. In spring 2020 the gap is large: many deaths in care homes
+or at home were never attributed to COVID. Official early counts are a clear
+underestimate. This is one of the most important caveats when reading raw numbers.
+
+
+SLIDE 5 — Test positivity rate
+------------------------------
+WHO considers positivity above 5% a sign of insufficient testing. Spain hit 12.5%
+in spring 2020, meaning official case counts that period can't be taken at face
+value. When positivity is high, the real incidence is a multiple of reported cases.
+
+
+SLIDE 6 — Vaccination (animated)
+---------------------------------
+Press play if it hasn't started. Spain reached ~183 doses per 100 people — among
+the highest in Europe. The rollout was faster than Poland's from the start.
+The drop in case fatality rate we'll see shortly aligns closely with this timeline.
+
+
+SLIDE 7 — Hospital and ICU occupancy
+--------------------------------------
+Hospital data is more reliable than case counts — it doesn't depend on testing
+capacity. ICU occupancy was critically strained in the first and third waves.
+ICU and hospital bed peaks don't always coincide — different variants affected
+severity differently.
+
+
+SLIDE 8 — Stringency index vs cases
+--------------------------------------
+This overlays the Oxford Stringency Index on the case curve. Stringency spikes
+tend to precede case drops by about two to three weeks — consistent with the
+incubation and reporting delay. Spain's March 2020 estado de alarma was one of
+the strictest lockdowns in Europe.
+
+
+SLIDE 9 — Mobility during lockdown
+-------------------------------------
+Spain's March 2020 lockdown caused roughly a 60% drop in retail and transit
+activity. Later waves caused much smaller drops even with high case counts —
+pandemic fatigue and behavioral adaptation. The contrast between wave one and
+subsequent waves is striking.
+
+
+SLIDE 10 — Regional burden by wave (choropleth)
+------------------------------------------------
+Spain's 17 autonomous communities were hit very differently. Madrid was almost
+the sole epicenter in the first wave. By the second and third waves spread became
+more uniform. The Balearics and Canaries had low transmission simply because
+tourism had stopped and they had smaller resident populations.
+
+
+SLIDE 11 — Age-sex mortality pyramid
+--------------------------------------
+COVID mortality was heavily age-skewed. The 80+ group accounts for the vast
+majority of deaths — bars below 60 are very narrow. There is also a consistent
+male skew across most age groups, seen in other countries too.
+
+
+SLIDE 12 — Variant prevalence
+------------------------------
+Alpha drove the third wave in spring 2021, Delta replaced it by summer, and
+Omicron became dominant in January 2022. Omicron caused a massive case spike
+but with much lower severity per infection — which is why the mortality curve
+didn't follow the cases curve.
+
+
+SLIDE 13 — Tourism collapse
+----------------------------
+International arrivals fell 66% in 2020 — from 135 million to 46 million.
+Tourism is around 12% of Spain's GDP. Poland's economy is much less exposed,
+which partly explains why Spain's economic shock was larger and more prolonged.
+
+
+SLIDE 14 — Unemployment Spain vs Poland
+-----------------------------------------
+Spain entered the pandemic at 14% unemployment — three times Poland's rate.
+It peaked at 16.5% in 2020. Spain's ERTE furlough scheme kept people technically
+employed and cushioned the headline number. Poland's labor market was more
+resilient due to lower services exposure.
+
+
+SLIDE 15 — SARIMA: train 2020–2022, predict 2023–2024
+------------------------------------------------------
+We trained SARIMA on 2020-2022 and predicted 2023-2024. The model overestimates —
+it learned the pandemic wave pattern and extrapolated it, without knowing the virus
+was transitioning to lower-intensity endemic circulation. This is a feature, not a
+bug: it shows the model is doing what it's supposed to, given what it was shown.
+
+
+SLIDE 16 — SARIMA: forecast sensitivity to training window
+-----------------------------------------------------------
+Retraining on the full 2020-2024 data gives a substantially lower 2025 forecast.
+The gap between the two models shows how sensitive predictions are to the training
+window — the decline phase is load-bearing information. This is the core
+methodological point of our inferential section.
+
+
+SLIDE 17 — Effective reproduction number R(t)
+----------------------------------------------
+R above one means the epidemic is growing, below one it's declining. The drops
+align with lockdown introductions and vaccination reaching critical mass. Omicron
+shows a very high initial R — reflecting high transmissibility — but it comes down
+quickly, consistent with immunity from prior infection and vaccination.
+
+
+SLIDE 18 — Case fatality rate by wave
+---------------------------------------
+First-wave CFR was high due to limited testing and overwhelmed hospitals. It
+dropped sharply from mid-2021 with vaccination. The Omicron-era CFR is a fraction
+of the first wave's. Spain and Poland follow the same pattern — suggesting it's
+a virus-level effect, not country-specific policy.
+
+
+SLIDE 19 — Key Takeaways
+-------------------------
+Spain had sharp early waves, strong regional heterogeneity, and an economy
+unusually exposed to the tourism shock. Official counts understate the real toll —
+excess mortality and positivity data are essential context. Vaccination clearly
+reduced mortality, though Omicron's lower intrinsic severity is a confound.
+And the SARIMA training window substantially changes the forecast — that's
+the core methodological point. Thank you.
