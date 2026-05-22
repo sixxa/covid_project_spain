@@ -1,0 +1,167 @@
+- application [ref=e2]:
+  - generic:
+    - generic [ref=e3]:
+      - heading "COVID-19 in Spain vs Poland" [level=2] [ref=e4]
+      - paragraph [ref=e5]: Data Analysis and Visualization (DAV), 2026
+      - paragraph [ref=e6]: "Structure: descriptive trends → regional heterogeneity → socio-economics → inferential models"
+    - generic:
+      - heading [level=3]: Daily cases
+      - paragraph: Spain's waves are sharper and earlier than Poland's; the first wave struck Spain weeks before Poland's.
+      - iframe [ref=e7]:
+        - generic [active] [ref=f256e1]:
+          - generic [ref=f256e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: 5k
+                    - generic:
+                      - generic: 10k
+                    - generic:
+                      - generic: 15k
+                    - generic:
+                      - generic: 20k
+                    - generic:
+                      - generic: 25k
+            - img:
+              - generic:
+                - generic [ref=f256e21]:
+                  - generic [ref=f256e24]: Spain
+                  - generic [ref=f256e28]: Poland
+                - generic:
+                  - generic: "Daily COVID-19 Cases (7-day smoothed): Spain vs Poland"
+                - generic:
+                  - generic: New cases
+            - toolbar [ref=f256e30]:
+              - button "Download plot as a PNG" [ref=f256e32] [cursor=pointer]:
+                - img [ref=f256e33]
+              - generic [ref=f256e35]:
+                - button "Zoom" [ref=f256e36] [cursor=pointer]:
+                  - img [ref=f256e37]
+                - button "Pan" [ref=f256e39] [cursor=pointer]:
+                  - img [ref=f256e40]
+              - generic [ref=f256e42]:
+                - button "Zoom in" [ref=f256e43] [cursor=pointer]:
+                  - img [ref=f256e44]
+                - button "Zoom out" [ref=f256e46] [cursor=pointer]:
+                  - img [ref=f256e47]
+                - button "Autoscale" [ref=f256e49] [cursor=pointer]:
+                  - img [ref=f256e50]
+                - button "Reset axes" [ref=f256e52] [cursor=pointer]:
+                  - img [ref=f256e53]
+              - link "plotly-logomark" [ref=f256e56] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f256e57]
+            - img
+          - img [ref=f256e70]
+    - generic:
+      - heading [level=3]: Daily deaths
+      - paragraph: Spain's first-wave mortality peak (April 2020) was one of the highest in Europe; vertical lines mark key policy events.
+      - iframe [ref=e8]:
+        - generic [active] [ref=f257e1]:
+          - generic [ref=f257e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "50"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "150"
+                    - generic:
+                      - generic: "200"
+                    - generic:
+                      - generic: "250"
+                    - generic:
+                      - generic: "300"
+                    - generic:
+                      - generic: "350"
+            - img:
+              - generic:
+                - generic [ref=f257e21]:
+                  - generic [ref=f257e22]: location
+                  - generic [ref=f257e25]: Spain
+                  - generic [ref=f257e29]: Poland
+                - generic:
+                  - generic: Daily COVID-19 Deaths (7-day smoothed)
+                - generic:
+                  - generic: date
+                - generic:
+                  - generic: Deaths
+            - toolbar [ref=f257e31]:
+              - button "Download plot as a PNG" [ref=f257e33] [cursor=pointer]:
+                - img [ref=f257e34]
+              - generic [ref=f257e36]:
+                - button "Zoom" [ref=f257e37] [cursor=pointer]:
+                  - img [ref=f257e38]
+                - button "Pan" [ref=f257e40] [cursor=pointer]:
+                  - img [ref=f257e41]
+              - generic [ref=f257e43]:
+                - button "Zoom in" [ref=f257e44] [cursor=pointer]:
+                  - img [ref=f257e45]
+                - button "Zoom out" [ref=f257e47] [cursor=pointer]:
+                  - img [ref=f257e48]
+                - button "Autoscale" [ref=f257e50] [cursor=pointer]:
+                  - img [ref=f257e51]
+                - button "Reset axes" [ref=f257e53] [cursor=pointer]:
+                  - img [ref=f257e54]
+              - link "plotly-logomark" [ref=f257e57] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f257e58]
+            - img
+          - img [ref=f257e71]
+  - link "1" [ref=e13] [cursor=pointer]:
+    - /url: "#/"
+  - complementary:
+    - button "next slide" [ref=e14] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e17]: "COVID-19 in Spain vs Poland Data Analysis and Visualization (DAV), 2026 Structure: descriptive trends → regional heterogeneity → socio-economics → inferential models"

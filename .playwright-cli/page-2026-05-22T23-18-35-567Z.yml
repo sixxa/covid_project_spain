@@ -1,0 +1,381 @@
+- application [ref=e2]:
+  - generic:
+    - generic:
+      - heading [level=3]: Tourism collapse
+      - paragraph: International arrivals fell 66% in 2020 (135M → 46M). Tourism accounts for ~12% of Spain's GDP, amplifying the economic shock far beyond Poland's exposure.
+      - iframe [ref=e19]:
+        - generic [active] [ref=f301e1]:
+          - generic [ref=f301e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2019"
+                    - generic:
+                      - generic: "2020"
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "20"
+                    - generic:
+                      - generic: "40"
+                    - generic:
+                      - generic: "60"
+                    - generic:
+                      - generic: "80"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "120"
+                    - generic:
+                      - generic: "140"
+            - img:
+              - generic:
+                - generic:
+                  - generic: "Spain: Total Tourist Nights in All Accommodation (2019–2024)"
+                - generic:
+                  - generic: Tourist nights (millions)
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Eurostat tour_occ_arnat"
+            - toolbar [ref=f301e19]:
+              - button "Download plot as a PNG" [ref=f301e21] [cursor=pointer]:
+                - img [ref=f301e22]
+              - generic [ref=f301e24]:
+                - button "Zoom" [ref=f301e25] [cursor=pointer]:
+                  - img [ref=f301e26]
+                - button "Pan" [ref=f301e28] [cursor=pointer]:
+                  - img [ref=f301e29]
+                - button "Box Select" [ref=f301e31] [cursor=pointer]:
+                  - img [ref=f301e32]
+                - button "Lasso Select" [ref=f301e34] [cursor=pointer]:
+                  - img [ref=f301e35]
+              - generic [ref=f301e37]:
+                - button "Zoom in" [ref=f301e38] [cursor=pointer]:
+                  - img [ref=f301e39]
+                - button "Zoom out" [ref=f301e41] [cursor=pointer]:
+                  - img [ref=f301e42]
+                - button "Autoscale" [ref=f301e44] [cursor=pointer]:
+                  - img [ref=f301e45]
+                - button "Reset axes" [ref=f301e47] [cursor=pointer]:
+                  - img [ref=f301e48]
+              - link "plotly-logomark" [ref=f301e51] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f301e52]
+            - img
+          - img [ref=f301e65]
+    - generic:
+      - heading [level=3]: "Unemployment: Spain vs Poland"
+      - paragraph: Spain's pre-pandemic unemployment (~14%) was already 3× Poland's rate; it peaked at 16.5% in 2020. Spain's ERTE furlough scheme kept people technically employed and cushioned the headline rise.
+      - iframe [ref=e24]:
+        - generic [active] [ref=f302e1]:
+          - generic [ref=f302e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2019"
+                    - generic:
+                      - generic: "2020"
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: "2"
+                    - generic:
+                      - generic: "4"
+                    - generic:
+                      - generic: "6"
+                    - generic:
+                      - generic: "8"
+                    - generic:
+                      - generic: "10"
+                    - generic:
+                      - generic: "12"
+                    - generic:
+                      - generic: "14"
+                    - generic:
+                      - generic: "16"
+            - img:
+              - generic:
+                - generic [ref=f302e21]:
+                  - generic [ref=f302e24]: Spain
+                  - generic [ref=f302e28]: Poland
+                - generic:
+                  - generic: "Unemployment Rate: Spain vs Poland (2019–2024)"
+                - generic:
+                  - generic: Unemployment rate (%)
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Eurostat une_rt_m"
+            - toolbar [ref=f302e30]:
+              - button "Download plot as a PNG" [ref=f302e32] [cursor=pointer]:
+                - img [ref=f302e33]
+              - generic [ref=f302e35]:
+                - button "Zoom" [ref=f302e36] [cursor=pointer]:
+                  - img [ref=f302e37]
+                - button "Pan" [ref=f302e39] [cursor=pointer]:
+                  - img [ref=f302e40]
+              - generic [ref=f302e42]:
+                - button "Zoom in" [ref=f302e43] [cursor=pointer]:
+                  - img [ref=f302e44]
+                - button "Zoom out" [ref=f302e46] [cursor=pointer]:
+                  - img [ref=f302e47]
+                - button "Autoscale" [ref=f302e49] [cursor=pointer]:
+                  - img [ref=f302e50]
+                - button "Reset axes" [ref=f302e52] [cursor=pointer]:
+                  - img [ref=f302e53]
+              - link "plotly-logomark" [ref=f302e56] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f302e57]
+            - img
+          - img [ref=f302e70]
+    - generic [ref=e33]:
+      - 'heading "SARIMA: train 2020–2022, predict 2023–2024" [level=3] [ref=e34]'
+      - paragraph [ref=e35]: Model trained before the endemic phase overestimates the endemic baseline — it learned the pandemic wave pattern without knowing the virus would transition to lower-intensity circulation.
+      - iframe [ref=e25]:
+        - generic [active] [ref=f303e1]:
+          - generic [ref=f303e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Apr 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Oct 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Apr 2024
+                    - generic:
+                      - generic: Jul 2024
+                    - generic:
+                      - generic: Oct 2024
+                  - generic:
+                    - generic:
+                      - generic: −2B
+                    - generic:
+                      - generic: −1.5B
+                    - generic:
+                      - generic: −1B
+                    - generic:
+                      - generic: −0.5B
+                    - generic:
+                      - generic: "0"
+            - img:
+              - generic:
+                - generic [ref=f303e21]:
+                  - generic [ref=f303e24]: 95% CI
+                  - generic [ref=f303e31]: Actual
+                  - generic [ref=f303e35]: Forecast (trained to 2022)
+                - generic:
+                  - generic: "SARIMA Forecast: Train 2020–2022, Predict 2023–2024"
+                - generic:
+                  - generic: Daily cases (smoothed)
+            - toolbar [ref=f303e37]:
+              - button "Download plot as a PNG" [ref=f303e39] [cursor=pointer]:
+                - img [ref=f303e40]
+              - generic [ref=f303e42]:
+                - button "Zoom" [ref=f303e43] [cursor=pointer]:
+                  - img [ref=f303e44]
+                - button "Pan" [ref=f303e46] [cursor=pointer]:
+                  - img [ref=f303e47]
+              - generic [ref=f303e49]:
+                - button "Zoom in" [ref=f303e50] [cursor=pointer]:
+                  - img [ref=f303e51]
+                - button "Zoom out" [ref=f303e53] [cursor=pointer]:
+                  - img [ref=f303e54]
+                - button "Autoscale" [ref=f303e56] [cursor=pointer]:
+                  - img [ref=f303e57]
+                - button "Reset axes" [ref=f303e59] [cursor=pointer]:
+                  - img [ref=f303e60]
+              - link "plotly-logomark" [ref=f303e63] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f303e64]
+            - img
+          - img [ref=f303e77]
+    - generic:
+      - heading [level=3]: "SARIMA: forecast sensitivity to training window"
+      - paragraph: Including 2023–2024 data in training substantially lowers the 2025 forecast. The gap between models shows how sensitive predictions are to the training window — the decline phase is load-bearing information.
+      - iframe [ref=e26]:
+        - generic [active] [ref=f304e1]:
+          - generic [ref=f304e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2025
+                    - generic:
+                      - generic: Mar 2025
+                    - generic:
+                      - generic: May 2025
+                    - generic:
+                      - generic: Jul 2025
+                    - generic:
+                      - generic: Sep 2025
+                    - generic:
+                      - generic: Nov 2025
+                  - generic:
+                    - generic:
+                      - generic: −8M
+                    - generic:
+                      - generic: −7M
+                    - generic:
+                      - generic: −6M
+                    - generic:
+                      - generic: −5M
+                    - generic:
+                      - generic: −4M
+                    - generic:
+                      - generic: −3M
+                    - generic:
+                      - generic: −2M
+                    - generic:
+                      - generic: −1M
+                    - generic:
+                      - generic: "0"
+            - img:
+              - generic:
+                - generic [ref=f304e21]:
+                  - generic [ref=f304e24]: 95% CI (2022 window)
+                  - generic [ref=f304e31]: 95% CI (2024 window)
+                  - generic [ref=f304e38]: "Train window: 2020–2022"
+                  - generic [ref=f304e42]: "Train window: 2020–2024"
+                - generic:
+                  - generic: "SARIMA 2025 Forecast: Sensitivity to Training Window"
+                - generic:
+                  - generic: Predicted daily cases
+            - toolbar [ref=f304e44]:
+              - button "Download plot as a PNG" [ref=f304e46] [cursor=pointer]:
+                - img [ref=f304e47]
+              - generic [ref=f304e49]:
+                - button "Zoom" [ref=f304e50] [cursor=pointer]:
+                  - img [ref=f304e51]
+                - button "Pan" [ref=f304e53] [cursor=pointer]:
+                  - img [ref=f304e54]
+              - generic [ref=f304e56]:
+                - button "Zoom in" [ref=f304e57] [cursor=pointer]:
+                  - img [ref=f304e58]
+                - button "Zoom out" [ref=f304e60] [cursor=pointer]:
+                  - img [ref=f304e61]
+                - button "Autoscale" [ref=f304e63] [cursor=pointer]:
+                  - img [ref=f304e64]
+                - button "Reset axes" [ref=f304e66] [cursor=pointer]:
+                  - img [ref=f304e67]
+              - link "plotly-logomark" [ref=f304e70] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f304e71]
+            - img
+          - img [ref=f304e84]
+    - generic:
+      - heading [level=3]: Effective reproduction number R(t)
+      - paragraph: R > 1 = growing epidemic; R < 1 = declining. Key transitions align with lockdown introductions and variant switches. Omicron shows a very high initial R — high transmissibility — but it falls quickly.
+      - iframe [ref=e37]:
+        - generic [active] [ref=f305e1]:
+          - generic [ref=f305e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "1"
+                    - generic:
+                      - generic: "2"
+                    - generic:
+                      - generic: "3"
+                    - generic:
+                      - generic: "4"
+            - img:
+              - generic:
+                - generic [ref=f305e21]:
+                  - generic [ref=f305e24]: Spain
+                  - generic [ref=f305e28]: Poland
+                - generic:
+                  - generic: "Effective Reproduction Number R(t): Spain vs Poland"
+                - generic:
+                  - generic: R(t) — 7-day smoothed
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+            - toolbar [ref=f305e30]:
+              - button "Download plot as a PNG" [ref=f305e32] [cursor=pointer]:
+                - img [ref=f305e33]
+              - generic [ref=f305e35]:
+                - button "Zoom" [ref=f305e36] [cursor=pointer]:
+                  - img [ref=f305e37]
+                - button "Pan" [ref=f305e39] [cursor=pointer]:
+                  - img [ref=f305e40]
+              - generic [ref=f305e42]:
+                - button "Zoom in" [ref=f305e43] [cursor=pointer]:
+                  - img [ref=f305e44]
+                - button "Zoom out" [ref=f305e46] [cursor=pointer]:
+                  - img [ref=f305e47]
+                - button "Autoscale" [ref=f305e49] [cursor=pointer]:
+                  - img [ref=f305e50]
+                - button "Reset axes" [ref=f305e52] [cursor=pointer]:
+                  - img [ref=f305e53]
+              - link "plotly-logomark" [ref=f305e56] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f305e57]
+            - img
+          - img [ref=f305e70]
+  - link "15" [ref=e40] [cursor=pointer]:
+    - /url: "#/14"
+  - complementary:
+    - button "previous slide" [ref=e30] [cursor=pointer]
+    - button "next slide" [ref=e14] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e17]: "SARIMA: train 2020–2022, predict 2023–2024 Model trained before the endemic phase overestimates the endemic baseline — it learned the pandemic wave pattern without knowing the virus would transition to lower-intensity circulation."

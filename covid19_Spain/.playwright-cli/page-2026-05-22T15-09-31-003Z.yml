@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - img:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Jan 2020
+            - generic:
+              - generic: Jul 2020
+            - generic:
+              - generic: Jan 2021
+            - generic:
+              - generic: Jul 2021
+            - generic:
+              - generic: Jan 2022
+            - generic:
+              - generic: Jul 2022
+            - generic:
+              - generic: Jan 2023
+            - generic:
+              - generic: Jul 2023
+            - generic:
+              - generic: Jan 2024
+            - generic:
+              - generic: Jul 2024
+          - generic:
+            - generic:
+              - generic: "0"
+            - generic:
+              - generic: 5k
+            - generic:
+              - generic: 10k
+            - generic:
+              - generic: 15k
+            - generic:
+              - generic: 20k
+            - generic:
+              - generic: 25k
+          - generic:
+            - generic:
+              - generic:
+                - generic: "10"
+              - generic:
+                - generic: "20"
+              - generic:
+                - generic: "30"
+              - generic:
+                - generic: "40"
+              - generic:
+                - generic: "50"
+              - generic:
+                - generic: "60"
+              - generic:
+                - generic: "70"
+              - generic:
+                - generic: "80"
+    - img:
+      - generic:
+        - generic [ref=e26]:
+          - generic [ref=e28]: Spain cases (smoothed)
+          - generic [ref=e31]: Spain stringency
+        - generic:
+          - generic: "Spain: Cases vs Stringency Index"
+        - generic:
+          - generic: Cases
+        - generic:
+          - generic: Stringency
+    - toolbar [ref=e33]:
+      - button "Download plot as a PNG" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - generic [ref=e38]:
+        - button "Zoom" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]
+        - button "Pan" [ref=e42] [cursor=pointer]:
+          - img [ref=e43]
+      - generic [ref=e45]:
+        - button "Zoom in" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+        - button "Zoom out" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "Autoscale" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "Reset axes" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]
+      - link "plotly-logomark" [ref=e59] [cursor=pointer]:
+        - /url: https://plotly.com/
+        - img "plotly-logomark" [ref=e60]
+    - img
+  - img [ref=e73]

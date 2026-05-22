@@ -1,0 +1,75 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - img:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Jan 2020
+            - generic:
+              - generic: Jul 2020
+            - generic:
+              - generic: Jan 2021
+            - generic:
+              - generic: Jul 2021
+            - generic:
+              - generic: Jan 2022
+            - generic:
+              - generic: Jul 2022
+            - generic:
+              - generic: Jan 2023
+            - generic:
+              - generic: Jul 2023
+            - generic:
+              - generic: Jan 2024
+            - generic:
+              - generic: Jul 2024
+          - generic:
+            - generic:
+              - generic: 0%
+            - generic:
+              - generic: 2%
+            - generic:
+              - generic: 4%
+            - generic:
+              - generic: 6%
+            - generic:
+              - generic: 8%
+            - generic:
+              - generic: 10%
+            - generic:
+              - generic: 12%
+    - img:
+      - generic:
+        - generic [ref=e21]:
+          - generic [ref=e22]: location
+          - generic [ref=e25]: Spain
+          - generic [ref=e29]: Poland
+        - generic:
+          - generic: "Test Positivity Rate: Spain vs Poland"
+        - generic:
+          - generic: date
+        - generic:
+          - generic: Positivity rate
+    - toolbar [ref=e31]:
+      - button "Download plot as a PNG" [ref=e33] [cursor=pointer]:
+        - img [ref=e34]
+      - generic [ref=e36]:
+        - button "Zoom" [ref=e37] [cursor=pointer]:
+          - img [ref=e38]
+        - button "Pan" [ref=e40] [cursor=pointer]:
+          - img [ref=e41]
+      - generic [ref=e43]:
+        - button "Zoom in" [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+        - button "Zoom out" [ref=e47] [cursor=pointer]:
+          - img [ref=e48]
+        - button "Autoscale" [ref=e50] [cursor=pointer]:
+          - img [ref=e51]
+        - button "Reset axes" [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+      - link "plotly-logomark" [ref=e57] [cursor=pointer]:
+        - /url: https://plotly.com/
+        - img "plotly-logomark" [ref=e58]
+    - img
+  - img [ref=e71]

@@ -1,0 +1,64 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - img:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: −10k
+            - generic:
+              - generic: −5k
+            - generic:
+              - generic: "0"
+            - generic:
+              - generic: 5k
+            - generic:
+              - generic: 10k
+          - generic:
+            - generic:
+              - generic: 0-19
+            - generic:
+              - generic: 20-39
+            - generic:
+              - generic: 40-59
+            - generic:
+              - generic: 60-79
+            - generic:
+              - generic: 80+
+    - img:
+      - generic:
+        - generic [ref=e22]:
+          - generic [ref=e24]: Male
+          - generic [ref=e31]: Female
+        - generic:
+          - generic: Spain COVID-19 Deaths by Age and Sex
+        - generic:
+          - generic: Deaths (Male left / Female right)
+        - generic:
+          - generic: Age group
+    - toolbar [ref=e37]:
+      - button "Download plot as a PNG" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+      - generic [ref=e42]:
+        - button "Zoom" [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+        - button "Pan" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+        - button "Box Select" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "Lasso Select" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+      - generic [ref=e55]:
+        - button "Zoom in" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - button "Zoom out" [ref=e59] [cursor=pointer]:
+          - img [ref=e60]
+        - button "Autoscale" [ref=e62] [cursor=pointer]:
+          - img [ref=e63]
+        - button "Reset axes" [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+      - link "plotly-logomark" [ref=e69] [cursor=pointer]:
+        - /url: https://plotly.com/
+        - img "plotly-logomark" [ref=e70]
+    - img
+  - img [ref=e83]

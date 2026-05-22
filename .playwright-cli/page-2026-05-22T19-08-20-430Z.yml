@@ -1,0 +1,259 @@
+- application [ref=e2]:
+  - generic:
+    - generic:
+      - heading [level=3]: "SARIMA: forecast sensitivity to training window"
+      - paragraph: Including 2023–2024 data in training substantially lowers the 2025 forecast. The gap between models shows how sensitive predictions are to the training window — the decline phase is load-bearing information.
+      - iframe [ref=e123]:
+        - generic [active] [ref=f32e1]:
+          - generic [ref=f32e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2025
+                    - generic:
+                      - generic: Mar 2025
+                    - generic:
+                      - generic: May 2025
+                    - generic:
+                      - generic: Jul 2025
+                    - generic:
+                      - generic: Sep 2025
+                    - generic:
+                      - generic: Nov 2025
+                  - generic:
+                    - generic:
+                      - generic: −8M
+                    - generic:
+                      - generic: −7M
+                    - generic:
+                      - generic: −6M
+                    - generic:
+                      - generic: −5M
+                    - generic:
+                      - generic: −4M
+                    - generic:
+                      - generic: −3M
+                    - generic:
+                      - generic: −2M
+                    - generic:
+                      - generic: −1M
+                    - generic:
+                      - generic: "0"
+            - img:
+              - generic:
+                - generic [ref=f32e22]:
+                  - generic [ref=f32e24]: 95% CI (2022 window)
+                  - generic [ref=f32e30]: 95% CI (2024 window)
+                  - generic [ref=f32e36]: "Train window: 2020–2022"
+                  - generic [ref=f32e39]: "Train window: 2020–2024"
+                - generic:
+                  - generic: "SARIMA 2025 Forecast: Sensitivity to Training Window"
+                - generic:
+                  - generic: Predicted daily cases
+            - toolbar [ref=f32e41]:
+              - button "Download plot as a PNG" [ref=f32e43] [cursor=pointer]:
+                - img [ref=f32e44]
+              - generic [ref=f32e46]:
+                - button "Zoom" [ref=f32e47] [cursor=pointer]:
+                  - img [ref=f32e48]
+                - button "Pan" [ref=f32e50] [cursor=pointer]:
+                  - img [ref=f32e51]
+              - generic [ref=f32e53]:
+                - button "Zoom in" [ref=f32e54] [cursor=pointer]:
+                  - img [ref=f32e55]
+                - button "Zoom out" [ref=f32e57] [cursor=pointer]:
+                  - img [ref=f32e58]
+                - button "Autoscale" [ref=f32e60] [cursor=pointer]:
+                  - img [ref=f32e61]
+                - button "Reset axes" [ref=f32e63] [cursor=pointer]:
+                  - img [ref=f32e64]
+              - link "plotly-logomark" [ref=f32e67] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f32e68]
+            - img
+          - img [ref=f32e81]
+    - generic:
+      - heading [level=3]: Effective reproduction number R(t)
+      - paragraph: R > 1 = growing epidemic; R < 1 = declining. Key transitions align with lockdown introductions and variant switches. Omicron shows a very high initial R — high transmissibility — but it falls quickly.
+      - iframe [ref=e131]:
+        - generic [active] [ref=f33e1]:
+          - generic [ref=f33e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "0.5"
+                    - generic:
+                      - generic: "1"
+                    - generic:
+                      - generic: "1.5"
+                    - generic:
+                      - generic: "2"
+                    - generic:
+                      - generic: "2.5"
+                    - generic:
+                      - generic: "3"
+                    - generic:
+                      - generic: "3.5"
+                    - generic:
+                      - generic: "4"
+            - img:
+              - generic:
+                - generic [ref=f33e22]:
+                  - generic [ref=f33e24]: Spain
+                  - generic [ref=f33e27]: Poland
+                - generic:
+                  - generic: "Effective Reproduction Number R(t): Spain vs Poland"
+                - generic:
+                  - generic: R(t) — 7-day smoothed
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data (reproduction_rate)"
+            - toolbar [ref=f33e29]:
+              - button "Download plot as a PNG" [ref=f33e31] [cursor=pointer]:
+                - img [ref=f33e32]
+              - generic [ref=f33e34]:
+                - button "Zoom" [ref=f33e35] [cursor=pointer]:
+                  - img [ref=f33e36]
+                - button "Pan" [ref=f33e38] [cursor=pointer]:
+                  - img [ref=f33e39]
+              - generic [ref=f33e41]:
+                - button "Zoom in" [ref=f33e42] [cursor=pointer]:
+                  - img [ref=f33e43]
+                - button "Zoom out" [ref=f33e45] [cursor=pointer]:
+                  - img [ref=f33e46]
+                - button "Autoscale" [ref=f33e48] [cursor=pointer]:
+                  - img [ref=f33e49]
+                - button "Reset axes" [ref=f33e51] [cursor=pointer]:
+                  - img [ref=f33e52]
+              - link "plotly-logomark" [ref=f33e55] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f33e56]
+            - img
+          - img [ref=f33e69]
+    - generic [ref=e150]:
+      - heading "Case fatality rate by wave" [level=3] [ref=e151]
+      - paragraph [ref=e152]: CFR fell sharply after mass vaccination began (mid-2021) and again with Omicron's arrival. Spain and Poland follow the same pattern — a virus-level effect, not country-specific.
+      - iframe [ref=e139]:
+        - generic [active] [ref=f34e1]:
+          - generic [ref=f34e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Wave 1 (Mar–Jun 2020)
+                    - generic:
+                      - generic: Wave 2 (Jul–Nov 2020)
+                    - generic:
+                      - generic: Waves 3–4 (Dec 2020–Jul 2021)
+                    - generic:
+                      - generic: Waves 5–6 (Aug 2021–Apr 2022)
+                    - generic:
+                      - generic: Endemic (May 2022–2024)
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "0.5"
+                    - generic:
+                      - generic: "1"
+                    - generic:
+                      - generic: "1.5"
+                    - generic:
+                      - generic: "2"
+            - img:
+              - generic:
+                - generic [ref=f34e22]:
+                  - generic [ref=f34e24]: Spain
+                  - generic [ref=f34e31]: Poland
+                - generic:
+                  - generic: "Case Fatality Rate by Wave: Spain vs Poland"
+                - generic:
+                  - generic: CFR (%)
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Our World in Data · CFR = deaths / cases (smoothed totals per wave)"
+            - toolbar [ref=f34e37]:
+              - button "Download plot as a PNG" [ref=f34e39] [cursor=pointer]:
+                - img [ref=f34e40]
+              - generic [ref=f34e42]:
+                - button "Zoom" [ref=f34e43] [cursor=pointer]:
+                  - img [ref=f34e44]
+                - button "Pan" [ref=f34e46] [cursor=pointer]:
+                  - img [ref=f34e47]
+                - button "Box Select" [ref=f34e49] [cursor=pointer]:
+                  - img [ref=f34e50]
+                - button "Lasso Select" [ref=f34e52] [cursor=pointer]:
+                  - img [ref=f34e53]
+              - generic [ref=f34e55]:
+                - button "Zoom in" [ref=f34e56] [cursor=pointer]:
+                  - img [ref=f34e57]
+                - button "Zoom out" [ref=f34e59] [cursor=pointer]:
+                  - img [ref=f34e60]
+                - button "Autoscale" [ref=f34e62] [cursor=pointer]:
+                  - img [ref=f34e63]
+                - button "Reset axes" [ref=f34e65] [cursor=pointer]:
+                  - img [ref=f34e66]
+              - link "plotly-logomark" [ref=f34e69] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f34e70]
+            - img
+          - img [ref=f34e83]
+    - generic:
+      - heading [level=3]: Key Takeaways
+      - list:
+        - listitem: Spain's waves were sharper and regionally heterogeneous — Madrid and Catalonia were hit earliest and hardest.
+        - listitem: Excess mortality reveals significant under-counting; high test positivity compounds the uncertainty.
+        - listitem: Vaccination reduced CFR; SARIMA forecast is highly sensitive to whether the decline phase is included in training.
+        - listitem: Spain's tourism-dependent economy (~12% of GDP) amplified the socio-economic shock relative to Poland.
+      - paragraph: "Data: OWID · ISCIII · OxCGRT · Google Mobility · Eurostat · OWID Variants"
+  - link "18" [ref=e154] [cursor=pointer]:
+    - /url: "#/17"
+  - complementary:
+    - button "previous slide" [ref=e17] [cursor=pointer]
+    - button "next slide" [ref=e19] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e23]: Case fatality rate by wave CFR fell sharply after mass vaccination began (mid-2021) and again with Omicron's arrival. Spain and Poland follow the same pattern — a virus-level effect, not country-specific.

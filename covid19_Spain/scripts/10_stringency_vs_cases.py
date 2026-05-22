@@ -3,7 +3,7 @@ from __future__ import annotations
 import pandas as pd
 import plotly.graph_objects as go
 
-from _common import load_owid, load_oxcgrt, save_outputs, save_processed
+from _common import apply_layout, load_owid, load_oxcgrt, save_outputs, save_processed
 
 SLUG = "10_stringency_vs_cases"
 
@@ -20,11 +20,8 @@ def main() -> None:
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=sp["date"], y=sp["new_cases_smoothed"], name="Spain cases (smoothed)", line={"color": "#AA151B"}))
     fig.add_trace(go.Scatter(x=sp["date"], y=sp["StringencyIndex"], name="Spain stringency", yaxis="y2", line={"color": "#4D4D4D"}))
+    fig = apply_layout(fig, "Spain: Cases vs Stringency Index", "Cases")
     fig.update_layout(
-        template="plotly_white",
-        title="Spain: Cases vs Stringency Index",
-        font={"size": 18},
-        yaxis={"title": "Cases"},
         yaxis2={"title": "Stringency", "overlaying": "y", "side": "right"},
     )
     save_outputs(fig, SLUG)

@@ -1,0 +1,517 @@
+- application [ref=e2]:
+  - generic:
+    - generic:
+      - heading [level=3]: Vaccination doses per 100 (animated)
+      - paragraph: Spain rolled out faster than Poland and reached higher coverage; press play to watch monthly progression. Spain peaked near 183 doses per 100 people.
+      - iframe [ref=e24]:
+        - generic [active] [ref=f5e1]:
+          - generic [ref=f5e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Poland
+                    - generic:
+                      - generic: Spain
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "50"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "150"
+                    - generic:
+                      - generic: "200"
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: "Month: 2023-03"
+                    - generic:
+                      - generic:
+                        - generic: 2020-01
+                      - generic:
+                        - generic: 2020-02
+                      - generic:
+                        - generic: 2020-03
+                      - generic:
+                        - generic: 2020-04
+                      - generic:
+                        - generic: 2020-05
+                      - generic:
+                        - generic: 2020-06
+                      - generic:
+                        - generic: 2020-07
+                      - generic:
+                        - generic: 2020-08
+                      - generic:
+                        - generic: 2020-09
+                      - generic:
+                        - generic: 2020-10
+                      - generic:
+                        - generic: 2020-11
+                      - generic:
+                        - generic: 2020-12
+                      - generic:
+                        - generic: 2021-01
+                      - generic:
+                        - generic: 2021-02
+                      - generic:
+                        - generic: 2021-03
+                      - generic:
+                        - generic: 2021-04
+                      - generic:
+                        - generic: 2021-05
+                      - generic:
+                        - generic: 2021-06
+                      - generic:
+                        - generic: 2021-07
+                      - generic:
+                        - generic: 2021-08
+                      - generic:
+                        - generic: 2021-09
+                      - generic:
+                        - generic: 2021-10
+                      - generic:
+                        - generic: 2021-11
+                      - generic:
+                        - generic: 2021-12
+                      - generic:
+                        - generic: 2022-01
+                      - generic:
+                        - generic: 2022-02
+                      - generic:
+                        - generic: 2022-03
+                      - generic:
+                        - generic: 2022-04
+                      - generic:
+                        - generic: 2022-05
+                      - generic:
+                        - generic: 2022-06
+                      - generic:
+                        - generic: 2022-07
+                      - generic:
+                        - generic: 2022-08
+                      - generic:
+                        - generic: 2022-09
+                      - generic:
+                        - generic: 2022-10
+                      - generic:
+                        - generic: 2022-11
+                      - generic:
+                        - generic: 2022-12
+                      - generic:
+                        - generic: 2023-01
+                      - generic:
+                        - generic: 2023-02
+                      - generic:
+                        - generic: 2023-03
+                      - generic:
+                        - generic: 2023-04
+                      - generic:
+                        - generic: 2023-05
+                      - generic:
+                        - generic: 2023-06
+                      - generic:
+                        - generic: 2023-07
+                      - generic:
+                        - generic: 2023-08
+                      - generic:
+                        - generic: 2023-09
+                      - generic:
+                        - generic: 2023-10
+                      - generic:
+                        - generic: 2023-11
+                      - generic:
+                        - generic: 2023-12
+                      - generic:
+                        - generic: 2024-01
+                      - generic:
+                        - generic: 2024-02
+                      - generic:
+                        - generic: 2024-03
+                      - generic:
+                        - generic: 2024-04
+                      - generic:
+                        - generic: 2024-05
+                      - generic:
+                        - generic: 2024-06
+                      - generic:
+                        - generic: 2024-07
+                      - generic:
+                        - generic: 2024-08
+                      - generic:
+                        - generic: 2024-09
+                      - generic:
+                        - generic: 2024-10
+                      - generic:
+                        - generic: 2024-11
+                      - generic:
+                        - generic: 2024-12
+                - generic:
+                  - generic: Vaccination Doses per 100 People (Animated by Month)
+                - generic:
+                  - generic: location
+                - generic:
+                  - generic: Doses per 100
+              - generic [ref=f5e21] [cursor=pointer]:
+                - generic [ref=f5e24]: ▶
+                - generic [ref=f5e27]: ◼
+            - toolbar [ref=f5e28]:
+              - button "Download plot as a PNG" [ref=f5e30] [cursor=pointer]:
+                - img [ref=f5e31]
+              - generic [ref=f5e33]:
+                - button "Zoom" [ref=f5e34] [cursor=pointer]:
+                  - img [ref=f5e35]
+                - button "Pan" [ref=f5e37] [cursor=pointer]:
+                  - img [ref=f5e38]
+                - button "Box Select" [ref=f5e40] [cursor=pointer]:
+                  - img [ref=f5e41]
+                - button "Lasso Select" [ref=f5e43] [cursor=pointer]:
+                  - img [ref=f5e44]
+              - generic [ref=f5e46]:
+                - button "Zoom in" [ref=f5e47] [cursor=pointer]:
+                  - img [ref=f5e48]
+                - button "Zoom out" [ref=f5e50] [cursor=pointer]:
+                  - img [ref=f5e51]
+                - button "Autoscale" [ref=f5e53] [cursor=pointer]:
+                  - img [ref=f5e54]
+                - button "Reset axes" [ref=f5e56] [cursor=pointer]:
+                  - img [ref=f5e57]
+              - link "plotly-logomark" [ref=f5e60] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f5e61]
+            - img
+          - img [ref=f5e74]
+    - generic:
+      - heading [level=3]: Hospital and ICU occupancy — Spain
+      - paragraph: ICU capacity was critically strained during the first and third waves; hospital beds peaked later than ICU. Hospital data is more reliable than case counts since it doesn't depend on testing capacity.
+      - iframe [ref=e35]:
+        - generic [active] [ref=f6e1]:
+          - generic [ref=f6e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "500"
+                    - generic:
+                      - generic: "1000"
+                    - generic:
+                      - generic: "1500"
+                    - generic:
+                      - generic: "2000"
+            - img:
+              - generic:
+                - generic [ref=f6e22]:
+                  - generic [ref=f6e24]: Hospitalized
+                  - generic [ref=f6e27]: ICU
+                - generic:
+                  - generic: Spain Hospital and ICU Occupancy
+                - generic:
+                  - generic: Patients
+            - toolbar [ref=f6e29]:
+              - button "Download plot as a PNG" [ref=f6e31] [cursor=pointer]:
+                - img [ref=f6e32]
+              - generic [ref=f6e34]:
+                - button "Zoom" [ref=f6e35] [cursor=pointer]:
+                  - img [ref=f6e36]
+                - button "Pan" [ref=f6e38] [cursor=pointer]:
+                  - img [ref=f6e39]
+              - generic [ref=f6e41]:
+                - button "Zoom in" [ref=f6e42] [cursor=pointer]:
+                  - img [ref=f6e43]
+                - button "Zoom out" [ref=f6e45] [cursor=pointer]:
+                  - img [ref=f6e46]
+                - button "Autoscale" [ref=f6e48] [cursor=pointer]:
+                  - img [ref=f6e49]
+                - button "Reset axes" [ref=f6e51] [cursor=pointer]:
+                  - img [ref=f6e52]
+              - link "plotly-logomark" [ref=f6e55] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f6e56]
+            - img
+          - img [ref=f6e69]
+    - generic [ref=e41]:
+      - heading "Stringency index vs cases" [level=3] [ref=e42]
+      - paragraph [ref=e43]:
+        - text: Stringency spikes precede case drops by ~2–3 weeks — consistent with a 14-day incubation and reporting lag. Spain's March 2020 lockdown (
+        - emphasis [ref=e44]: estado de alarma
+        - text: ) was one of Europe's strictest.
+      - iframe [ref=e36]:
+        - generic [active] [ref=f7e1]:
+          - generic [ref=f7e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: 5k
+                    - generic:
+                      - generic: 10k
+                    - generic:
+                      - generic: 15k
+                    - generic:
+                      - generic: 20k
+                    - generic:
+                      - generic: 25k
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "10"
+                      - generic:
+                        - generic: "20"
+                      - generic:
+                        - generic: "30"
+                      - generic:
+                        - generic: "40"
+                      - generic:
+                        - generic: "50"
+                      - generic:
+                        - generic: "60"
+                      - generic:
+                        - generic: "70"
+                      - generic:
+                        - generic: "80"
+            - img:
+              - generic:
+                - generic [ref=f7e26]:
+                  - generic [ref=f7e28]: Spain cases (smoothed)
+                  - generic [ref=f7e31]: Spain stringency
+                - generic:
+                  - generic: "Spain: Cases vs Stringency Index"
+                - generic:
+                  - generic: Cases
+                - generic:
+                  - generic: Stringency
+            - toolbar [ref=f7e33]:
+              - button "Download plot as a PNG" [ref=f7e35] [cursor=pointer]:
+                - img [ref=f7e36]
+              - generic [ref=f7e38]:
+                - button "Zoom" [ref=f7e39] [cursor=pointer]:
+                  - img [ref=f7e40]
+                - button "Pan" [ref=f7e42] [cursor=pointer]:
+                  - img [ref=f7e43]
+              - generic [ref=f7e45]:
+                - button "Zoom in" [ref=f7e46] [cursor=pointer]:
+                  - img [ref=f7e47]
+                - button "Zoom out" [ref=f7e49] [cursor=pointer]:
+                  - img [ref=f7e50]
+                - button "Autoscale" [ref=f7e52] [cursor=pointer]:
+                  - img [ref=f7e53]
+                - button "Reset axes" [ref=f7e55] [cursor=pointer]:
+                  - img [ref=f7e56]
+              - link "plotly-logomark" [ref=f7e59] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f7e60]
+            - img
+          - img [ref=f7e73]
+    - generic:
+      - heading [level=3]: Mobility during lockdown
+      - paragraph: Spain's March 2020 lockdown caused a ~60% drop in retail and transit mobility. Later waves caused much smaller drops — pandemic fatigue and behavioral adaptation.
+      - iframe [ref=e37]:
+        - generic [active] [ref=f8e1]:
+          - generic [ref=f8e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: −60
+                    - generic:
+                      - generic: −50
+                    - generic:
+                      - generic: −40
+                    - generic:
+                      - generic: −30
+                    - generic:
+                      - generic: −20
+                    - generic:
+                      - generic: −10
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "10"
+            - img:
+              - generic:
+                - generic [ref=f8e21]:
+                  - generic [ref=f8e24]: retail
+                  - generic [ref=f8e28]: transit
+                  - generic [ref=f8e32]: workplaces
+                - generic:
+                  - generic: Spain Mobility During and After Lockdown
+                - generic:
+                  - generic: "% change from baseline"
+            - toolbar [ref=f8e34]:
+              - button "Download plot as a PNG" [ref=f8e36] [cursor=pointer]:
+                - img [ref=f8e37]
+              - generic [ref=f8e39]:
+                - button "Zoom" [ref=f8e40] [cursor=pointer]:
+                  - img [ref=f8e41]
+                - button "Pan" [ref=f8e43] [cursor=pointer]:
+                  - img [ref=f8e44]
+              - generic [ref=f8e46]:
+                - button "Zoom in" [ref=f8e47] [cursor=pointer]:
+                  - img [ref=f8e48]
+                - button "Zoom out" [ref=f8e50] [cursor=pointer]:
+                  - img [ref=f8e51]
+                - button "Autoscale" [ref=f8e53] [cursor=pointer]:
+                  - img [ref=f8e54]
+                - button "Reset axes" [ref=f8e56] [cursor=pointer]:
+                  - img [ref=f8e57]
+              - link "plotly-logomark" [ref=f8e60] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f8e61]
+            - img
+          - img [ref=f8e74]
+    - generic:
+      - heading [level=3]: Regional burden by wave (animated)
+      - paragraph: Madrid and Catalonia led the first two waves; later waves spread more uniformly across all 17 autonomous communities. Balearics and Canaries had low transmission once tourism stopped.
+      - iframe [ref=e46]:
+        - generic [active] [ref=f9e1]:
+          - generic [ref=f9e5]:
+            - img
+            - generic [ref=f9e6]:
+              - region "Map" [ref=f9e7]
+              - group [ref=f9e8]:
+                - generic "Toggle attribution" [ref=f9e9] [cursor=pointer]
+                - generic [ref=f9e10]:
+                  - text: ©
+                  - link "CARTO" [ref=f9e11] [cursor=pointer]:
+                    - /url: https://carto.com/about-carto/
+                  - text: ", ©"
+                  - link "OpenStreetMap" [ref=f9e12] [cursor=pointer]:
+                    - /url: http://www.openstreetmap.org/about/
+                  - text: contributors
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Wave_2020
+                      - generic:
+                        - generic: Wave_2021
+                      - generic:
+                        - generic: Wave_2022
+                      - generic:
+                        - generic: Wave_2023_2024
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 25k
+                    - generic:
+                      - generic: 30k
+                    - generic:
+                      - generic: 35k
+                    - generic:
+                      - generic: 40k
+                    - generic:
+                      - generic: 45k
+                  - generic:
+                    - generic:
+                      - generic: cases
+                - generic:
+                  - generic: Spain Regional Case Burden by Pandemic Wave
+              - generic [ref=f9e15] [cursor=pointer]:
+                - generic [ref=f9e18]: ▶
+                - generic [ref=f9e21]: ◼
+            - toolbar [ref=f9e22]:
+              - button "Download plot as a PNG" [ref=f9e24] [cursor=pointer]:
+                - img [ref=f9e25]
+              - generic [ref=f9e27]:
+                - button "Pan" [ref=f9e28] [cursor=pointer]:
+                  - img [ref=f9e29]
+                - button "Box Select" [ref=f9e31] [cursor=pointer]:
+                  - img [ref=f9e32]
+                - button "Lasso Select" [ref=f9e34] [cursor=pointer]:
+                  - img [ref=f9e35]
+              - generic [ref=f9e37]:
+                - button "Zoom in" [ref=f9e38] [cursor=pointer]:
+                  - img [ref=f9e39]
+                - button "Zoom out" [ref=f9e41] [cursor=pointer]:
+                  - img [ref=f9e42]
+                - button "Reset view" [ref=f9e44] [cursor=pointer]:
+                  - img [ref=f9e45]
+              - link "plotly-logomark" [ref=f9e48] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f9e49]
+            - img
+          - img [ref=f9e62]
+  - link "8" [ref=e49] [cursor=pointer]:
+    - /url: "#/7"
+  - complementary:
+    - button "previous slide" [ref=e28] [cursor=pointer]
+    - button "next slide" [ref=e14] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e17]: Stringency index vs cases Stringency spikes precede case drops by ~2–3 weeks — consistent with a 14-day incubation and reporting lag. Spain's March 2020 lockdown ( estado de alarma ) was one of Europe's strictest.

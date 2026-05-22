@@ -32,13 +32,24 @@ def apply_layout(fig: go.Figure, title: str, y_title: str = "") -> go.Figure:
         template="plotly_white",
         title=title,
         font={"size": 18},
-        legend={"orientation": "h", "y": -0.2},
+        legend={
+            "orientation": "h",
+            "yanchor": "top",
+            "y": -0.22,
+            "xanchor": "left",
+            "x": 0,
+            "title": {"text": ""},
+            "font": {"size": 14},
+            "entrywidth": 0,
+            "entrywidthmode": "pixels",
+            "bgcolor": "rgba(255,255,255,0.85)",
+        },
         hoverlabel={
             "bgcolor": "#FFFFFF",
             "bordercolor": "#1F2937",
             "font": {"color": "#111111", "size": 14},
         },
-        margin={"l": 60, "r": 30, "t": 80, "b": 80},
+        margin={"l": 60, "r": 30, "t": 80, "b": 130},
     )
     if y_title:
         fig.update_yaxes(title=y_title)

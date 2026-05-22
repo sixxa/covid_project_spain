@@ -1,0 +1,396 @@
+- application [ref=e2]:
+  - generic:
+    - generic:
+      - heading [level=3]: Stringency index vs cases
+      - paragraph:
+        - text: Stringency spikes precede case drops by ~2–3 weeks — consistent with a 14-day incubation and reporting lag. Spain's March 2020 lockdown (
+        - emphasis: estado de alarma
+        - text: ) was one of Europe's strictest.
+      - iframe [ref=e36]:
+        - generic [active] [ref=f41e1]:
+          - generic [ref=f41e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: 5k
+                    - generic:
+                      - generic: 10k
+                    - generic:
+                      - generic: 15k
+                    - generic:
+                      - generic: 20k
+                    - generic:
+                      - generic: 25k
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: "10"
+                      - generic:
+                        - generic: "20"
+                      - generic:
+                        - generic: "30"
+                      - generic:
+                        - generic: "40"
+                      - generic:
+                        - generic: "50"
+                      - generic:
+                        - generic: "60"
+                      - generic:
+                        - generic: "70"
+                      - generic:
+                        - generic: "80"
+            - img:
+              - generic:
+                - generic [ref=f41e26]:
+                  - generic [ref=f41e28]: Spain cases (smoothed)
+                  - generic [ref=f41e31]: Spain stringency
+                - generic:
+                  - generic: "Spain: Cases vs Stringency Index"
+                - generic:
+                  - generic: Cases
+                - generic:
+                  - generic: Stringency
+            - toolbar [ref=f41e33]:
+              - button "Download plot as a PNG" [ref=f41e35] [cursor=pointer]:
+                - img [ref=f41e36]
+              - generic [ref=f41e38]:
+                - button "Zoom" [ref=f41e39] [cursor=pointer]:
+                  - img [ref=f41e40]
+                - button "Pan" [ref=f41e42] [cursor=pointer]:
+                  - img [ref=f41e43]
+              - generic [ref=f41e45]:
+                - button "Zoom in" [ref=f41e46] [cursor=pointer]:
+                  - img [ref=f41e47]
+                - button "Zoom out" [ref=f41e49] [cursor=pointer]:
+                  - img [ref=f41e50]
+                - button "Autoscale" [ref=f41e52] [cursor=pointer]:
+                  - img [ref=f41e53]
+                - button "Reset axes" [ref=f41e55] [cursor=pointer]:
+                  - img [ref=f41e56]
+              - link "plotly-logomark" [ref=f41e59] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f41e60]
+            - img
+          - img [ref=f41e73]
+    - generic:
+      - heading [level=3]: Mobility during lockdown
+      - paragraph: Spain's March 2020 lockdown caused a ~60% drop in retail and transit mobility. Later waves caused much smaller drops — pandemic fatigue and behavioral adaptation.
+      - iframe [ref=e37]:
+        - generic [active] [ref=f42e1]:
+          - generic [ref=f42e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: −60
+                    - generic:
+                      - generic: −50
+                    - generic:
+                      - generic: −40
+                    - generic:
+                      - generic: −30
+                    - generic:
+                      - generic: −20
+                    - generic:
+                      - generic: −10
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "10"
+            - img:
+              - generic:
+                - generic [ref=f42e21]:
+                  - generic [ref=f42e24]: retail
+                  - generic [ref=f42e28]: transit
+                  - generic [ref=f42e32]: workplaces
+                - generic:
+                  - generic: Spain Mobility During and After Lockdown
+                - generic:
+                  - generic: "% change from baseline"
+            - toolbar [ref=f42e34]:
+              - button "Download plot as a PNG" [ref=f42e36] [cursor=pointer]:
+                - img [ref=f42e37]
+              - generic [ref=f42e39]:
+                - button "Zoom" [ref=f42e40] [cursor=pointer]:
+                  - img [ref=f42e41]
+                - button "Pan" [ref=f42e43] [cursor=pointer]:
+                  - img [ref=f42e44]
+              - generic [ref=f42e46]:
+                - button "Zoom in" [ref=f42e47] [cursor=pointer]:
+                  - img [ref=f42e48]
+                - button "Zoom out" [ref=f42e50] [cursor=pointer]:
+                  - img [ref=f42e51]
+                - button "Autoscale" [ref=f42e53] [cursor=pointer]:
+                  - img [ref=f42e54]
+                - button "Reset axes" [ref=f42e56] [cursor=pointer]:
+                  - img [ref=f42e57]
+              - link "plotly-logomark" [ref=f42e60] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f42e61]
+            - img
+          - img [ref=f42e74]
+    - generic [ref=e58]:
+      - heading "Regional burden by wave (animated)" [level=3] [ref=e59]
+      - paragraph [ref=e60]: Madrid and Catalonia led the first two waves; later waves spread more uniformly across all 17 autonomous communities. Balearics and Canaries had low transmission once tourism stopped.
+      - iframe [ref=e46]:
+        - generic [active] [ref=f43e1]:
+          - generic [ref=f43e5]:
+            - img
+            - generic [ref=f43e6]:
+              - region "Map" [ref=f43e7]
+              - group [ref=f43e8]:
+                - generic "Toggle attribution" [ref=f43e9] [cursor=pointer]
+                - generic [ref=f43e10]:
+                  - text: ©
+                  - link "CARTO" [ref=f43e11] [cursor=pointer]:
+                    - /url: https://carto.com/about-carto/
+                  - text: ", ©"
+                  - link "OpenStreetMap" [ref=f43e12] [cursor=pointer]:
+                    - /url: http://www.openstreetmap.org/about/
+                  - text: contributors
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Wave_2020
+                      - generic:
+                        - generic: Wave_2021
+                      - generic:
+                        - generic: Wave_2022
+                      - generic:
+                        - generic: Wave_2023_2024
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 25k
+                    - generic:
+                      - generic: 30k
+                    - generic:
+                      - generic: 35k
+                    - generic:
+                      - generic: 40k
+                    - generic:
+                      - generic: 45k
+                  - generic:
+                    - generic:
+                      - generic: cases
+                - generic:
+                  - generic: Spain Regional Case Burden by Pandemic Wave
+              - generic [ref=f43e15] [cursor=pointer]:
+                - generic [ref=f43e18]: ▶
+                - generic [ref=f43e21]: ◼
+            - toolbar [ref=f43e22]:
+              - button "Download plot as a PNG" [ref=f43e24] [cursor=pointer]:
+                - img [ref=f43e25]
+              - generic [ref=f43e27]:
+                - button "Pan" [ref=f43e28] [cursor=pointer]:
+                  - img [ref=f43e29]
+                - button "Box Select" [ref=f43e31] [cursor=pointer]:
+                  - img [ref=f43e32]
+                - button "Lasso Select" [ref=f43e34] [cursor=pointer]:
+                  - img [ref=f43e35]
+              - generic [ref=f43e37]:
+                - button "Zoom in" [ref=f43e38] [cursor=pointer]:
+                  - img [ref=f43e39]
+                - button "Zoom out" [ref=f43e41] [cursor=pointer]:
+                  - img [ref=f43e42]
+                - button "Reset view" [ref=f43e44] [cursor=pointer]:
+                  - img [ref=f43e45]
+              - link "plotly-logomark" [ref=f43e48] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f43e49]
+            - img
+          - img [ref=f43e62]
+    - generic:
+      - heading [level=3]: Age-sex mortality pyramid
+      - paragraph: "COVID mortality was strongly age-skewed: the 80+ group accounts for the vast majority of deaths. There is also a consistent male skew across all age groups."
+      - iframe [ref=e54]:
+        - generic [active] [ref=f44e1]:
+          - generic [ref=f44e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: −10k
+                    - generic:
+                      - generic: −5k
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: 5k
+                    - generic:
+                      - generic: 10k
+                  - generic:
+                    - generic:
+                      - generic: 0-19
+                    - generic:
+                      - generic: 20-39
+                    - generic:
+                      - generic: 40-59
+                    - generic:
+                      - generic: 60-79
+                    - generic:
+                      - generic: 80+
+            - img:
+              - generic:
+                - generic [ref=f44e22]:
+                  - generic [ref=f44e24]: Male
+                  - generic [ref=f44e31]: Female
+                - generic:
+                  - generic: Spain COVID-19 Deaths by Age and Sex
+                - generic:
+                  - generic: Deaths (Male left / Female right)
+                - generic:
+                  - generic: Age group
+            - toolbar [ref=f44e37]:
+              - button "Download plot as a PNG" [ref=f44e39] [cursor=pointer]:
+                - img [ref=f44e40]
+              - generic [ref=f44e42]:
+                - button "Zoom" [ref=f44e43] [cursor=pointer]:
+                  - img [ref=f44e44]
+                - button "Pan" [ref=f44e46] [cursor=pointer]:
+                  - img [ref=f44e47]
+                - button "Box Select" [ref=f44e49] [cursor=pointer]:
+                  - img [ref=f44e50]
+                - button "Lasso Select" [ref=f44e52] [cursor=pointer]:
+                  - img [ref=f44e53]
+              - generic [ref=f44e55]:
+                - button "Zoom in" [ref=f44e56] [cursor=pointer]:
+                  - img [ref=f44e57]
+                - button "Zoom out" [ref=f44e59] [cursor=pointer]:
+                  - img [ref=f44e60]
+                - button "Autoscale" [ref=f44e62] [cursor=pointer]:
+                  - img [ref=f44e63]
+                - button "Reset axes" [ref=f44e65] [cursor=pointer]:
+                  - img [ref=f44e66]
+              - link "plotly-logomark" [ref=f44e69] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f44e70]
+            - img
+          - img [ref=f44e83]
+    - generic:
+      - heading [level=3]: Variant prevalence
+      - paragraph: Alpha dominated spring 2021, Delta replaced it by summer, and Omicron became dominant from January 2022. Omicron caused a massive case spike but with much lower severity per infection.
+      - iframe [ref=e62]:
+        - generic [active] [ref=f45e1]:
+          - generic [ref=f45e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2020"
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: 0%
+                    - generic:
+                      - generic: 20%
+                    - generic:
+                      - generic: 40%
+                    - generic:
+                      - generic: 60%
+                    - generic:
+                      - generic: 80%
+                    - generic:
+                      - generic: 100%
+            - img:
+              - generic:
+                - generic [ref=f45e21]:
+                  - generic [ref=f45e22]: variant
+                  - generic [ref=f45e25]: Alpha
+                  - generic [ref=f45e32]: Delta
+                  - generic [ref=f45e39]: Omicron
+                  - generic [ref=f45e46]: Other
+                - generic:
+                  - generic: Variant Prevalence in Spain
+                - generic:
+                  - generic: date
+                - generic:
+                  - generic: Share
+            - toolbar [ref=f45e51]:
+              - button "Download plot as a PNG" [ref=f45e53] [cursor=pointer]:
+                - img [ref=f45e54]
+              - generic [ref=f45e56]:
+                - button "Zoom" [ref=f45e57] [cursor=pointer]:
+                  - img [ref=f45e58]
+                - button "Pan" [ref=f45e60] [cursor=pointer]:
+                  - img [ref=f45e61]
+              - generic [ref=f45e63]:
+                - button "Zoom in" [ref=f45e64] [cursor=pointer]:
+                  - img [ref=f45e65]
+                - button "Zoom out" [ref=f45e67] [cursor=pointer]:
+                  - img [ref=f45e68]
+                - button "Autoscale" [ref=f45e70] [cursor=pointer]:
+                  - img [ref=f45e71]
+                - button "Reset axes" [ref=f45e73] [cursor=pointer]:
+                  - img [ref=f45e74]
+              - link "plotly-logomark" [ref=f45e77] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f45e78]
+            - img
+          - img [ref=f45e91]
+  - link "10" [ref=e65] [cursor=pointer]:
+    - /url: "#/9"
+  - complementary:
+    - button "previous slide" [ref=e15] [cursor=pointer]
+    - button "next slide" [ref=e17] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e21]: Regional burden by wave (animated) Madrid and Catalonia led the first two waves; later waves spread more uniformly across all 17 autonomous communities. Balearics and Canaries had low transmission once tourism stopped.

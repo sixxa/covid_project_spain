@@ -1,0 +1,441 @@
+- application [ref=e2]:
+  - generic:
+    - generic:
+      - heading [level=3]: Daily cases
+      - paragraph: Spain's waves are sharper and earlier than Poland's; the first wave struck Spain weeks before Poland's.
+      - iframe [ref=e7]:
+        - generic [active] [ref=f52e1]:
+          - generic [ref=f52e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: 5k
+                    - generic:
+                      - generic: 10k
+                    - generic:
+                      - generic: 15k
+                    - generic:
+                      - generic: 20k
+                    - generic:
+                      - generic: 25k
+            - img:
+              - generic:
+                - generic [ref=f52e21]:
+                  - generic [ref=f52e24]: Spain
+                  - generic [ref=f52e28]: Poland
+                - generic:
+                  - generic: "Daily COVID-19 Cases (7-day smoothed): Spain vs Poland"
+                - generic:
+                  - generic: New cases
+            - toolbar [ref=f52e30]:
+              - button "Download plot as a PNG" [ref=f52e32] [cursor=pointer]:
+                - img [ref=f52e33]
+              - generic [ref=f52e35]:
+                - button "Zoom" [ref=f52e36] [cursor=pointer]:
+                  - img [ref=f52e37]
+                - button "Pan" [ref=f52e39] [cursor=pointer]:
+                  - img [ref=f52e40]
+              - generic [ref=f52e42]:
+                - button "Zoom in" [ref=f52e43] [cursor=pointer]:
+                  - img [ref=f52e44]
+                - button "Zoom out" [ref=f52e46] [cursor=pointer]:
+                  - img [ref=f52e47]
+                - button "Autoscale" [ref=f52e49] [cursor=pointer]:
+                  - img [ref=f52e50]
+                - button "Reset axes" [ref=f52e52] [cursor=pointer]:
+                  - img [ref=f52e53]
+              - link "plotly-logomark" [ref=f52e56] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f52e57]
+            - img
+          - img [ref=f52e70]
+    - generic:
+      - heading [level=3]: Daily deaths
+      - paragraph: Spain's first-wave mortality peak (April 2020) was one of the highest in Europe; vertical lines mark key policy events.
+      - iframe [ref=e8]:
+        - generic [active] [ref=f53e1]:
+          - generic [ref=f53e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "50"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "150"
+                    - generic:
+                      - generic: "200"
+                    - generic:
+                      - generic: "250"
+                    - generic:
+                      - generic: "300"
+                    - generic:
+                      - generic: "350"
+            - img:
+              - generic:
+                - generic [ref=f53e21]:
+                  - generic [ref=f53e22]: location
+                  - generic [ref=f53e25]: Spain
+                  - generic [ref=f53e29]: Poland
+                - generic:
+                  - generic: Daily COVID-19 Deaths (7-day smoothed)
+                - generic:
+                  - generic: date
+                - generic:
+                  - generic: Deaths
+            - toolbar [ref=f53e31]:
+              - button "Download plot as a PNG" [ref=f53e33] [cursor=pointer]:
+                - img [ref=f53e34]
+              - generic [ref=f53e36]:
+                - button "Zoom" [ref=f53e37] [cursor=pointer]:
+                  - img [ref=f53e38]
+                - button "Pan" [ref=f53e40] [cursor=pointer]:
+                  - img [ref=f53e41]
+              - generic [ref=f53e43]:
+                - button "Zoom in" [ref=f53e44] [cursor=pointer]:
+                  - img [ref=f53e45]
+                - button "Zoom out" [ref=f53e47] [cursor=pointer]:
+                  - img [ref=f53e48]
+                - button "Autoscale" [ref=f53e50] [cursor=pointer]:
+                  - img [ref=f53e51]
+                - button "Reset axes" [ref=f53e53] [cursor=pointer]:
+                  - img [ref=f53e54]
+              - link "plotly-logomark" [ref=f53e57] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f53e58]
+            - img
+          - img [ref=f53e71]
+    - generic [ref=e30]:
+      - heading "Excess mortality vs reported deaths" [level=3] [ref=e31]
+      - paragraph [ref=e32]: Excess mortality significantly exceeded official COVID deaths in early 2020, suggesting substantial under-counting in care homes and at-home deaths.
+      - iframe [ref=e9]:
+        - generic [active] [ref=f54e1]:
+          - generic [ref=f54e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "200"
+                    - generic:
+                      - generic: "300"
+                    - generic:
+                      - generic: "400"
+            - img:
+              - generic:
+                - generic [ref=f54e22]:
+                  - generic [ref=f54e24]: Reported COVID deaths
+                  - generic [ref=f54e27]: Excess mortality proxy
+                - generic:
+                  - generic: "Spain: Excess Mortality vs Reported COVID-19 Deaths"
+                - generic:
+                  - generic: Daily deaths
+            - toolbar [ref=f54e29]:
+              - button "Download plot as a PNG" [ref=f54e31] [cursor=pointer]:
+                - img [ref=f54e32]
+              - generic [ref=f54e34]:
+                - button "Zoom" [ref=f54e35] [cursor=pointer]:
+                  - img [ref=f54e36]
+                - button "Pan" [ref=f54e38] [cursor=pointer]:
+                  - img [ref=f54e39]
+              - generic [ref=f54e41]:
+                - button "Zoom in" [ref=f54e42] [cursor=pointer]:
+                  - img [ref=f54e43]
+                - button "Zoom out" [ref=f54e45] [cursor=pointer]:
+                  - img [ref=f54e46]
+                - button "Autoscale" [ref=f54e48] [cursor=pointer]:
+                  - img [ref=f54e49]
+                - button "Reset axes" [ref=f54e51] [cursor=pointer]:
+                  - img [ref=f54e52]
+              - link "plotly-logomark" [ref=f54e55] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f54e56]
+            - img
+          - img [ref=f54e69]
+    - generic:
+      - heading [level=3]: Test positivity rate
+      - paragraph: Positivity above 5% (WHO threshold) signals insufficient testing — Spain hit 12.5%+ in spring 2020, meaning official case counts are a severe underestimate for that period.
+      - iframe [ref=e26]:
+        - generic [active] [ref=f55e1]:
+          - generic [ref=f55e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2020
+                    - generic:
+                      - generic: Jul 2020
+                    - generic:
+                      - generic: Jan 2021
+                    - generic:
+                      - generic: Jul 2021
+                    - generic:
+                      - generic: Jan 2022
+                    - generic:
+                      - generic: Jul 2022
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: 0%
+                    - generic:
+                      - generic: 2%
+                    - generic:
+                      - generic: 4%
+                    - generic:
+                      - generic: 6%
+                    - generic:
+                      - generic: 8%
+                    - generic:
+                      - generic: 10%
+                    - generic:
+                      - generic: 12%
+            - img:
+              - generic:
+                - generic [ref=f55e21]:
+                  - generic [ref=f55e22]: location
+                  - generic [ref=f55e25]: Spain
+                  - generic [ref=f55e29]: Poland
+                - generic:
+                  - generic: "Test Positivity Rate: Spain vs Poland"
+                - generic:
+                  - generic: date
+                - generic:
+                  - generic: Positivity rate
+            - toolbar [ref=f55e31]:
+              - button "Download plot as a PNG" [ref=f55e33] [cursor=pointer]:
+                - img [ref=f55e34]
+              - generic [ref=f55e36]:
+                - button "Zoom" [ref=f55e37] [cursor=pointer]:
+                  - img [ref=f55e38]
+                - button "Pan" [ref=f55e40] [cursor=pointer]:
+                  - img [ref=f55e41]
+              - generic [ref=f55e43]:
+                - button "Zoom in" [ref=f55e44] [cursor=pointer]:
+                  - img [ref=f55e45]
+                - button "Zoom out" [ref=f55e47] [cursor=pointer]:
+                  - img [ref=f55e48]
+                - button "Autoscale" [ref=f55e50] [cursor=pointer]:
+                  - img [ref=f55e51]
+                - button "Reset axes" [ref=f55e53] [cursor=pointer]:
+                  - img [ref=f55e54]
+              - link "plotly-logomark" [ref=f55e57] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f55e58]
+            - img
+          - img [ref=f55e71]
+    - generic:
+      - heading [level=3]: Vaccination doses per 100 (animated)
+      - paragraph: Spain rolled out faster than Poland and reached higher coverage; press play to watch monthly progression. Spain peaked near 183 doses per 100 people.
+      - iframe [ref=e34]:
+        - generic [active] [ref=f56e1]:
+          - generic [ref=f56e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Poland
+                    - generic:
+                      - generic: Spain
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "50"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "150"
+                    - generic:
+                      - generic: "200"
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: "Month: 2024-12"
+                    - generic:
+                      - generic:
+                        - generic: 2020-01
+                      - generic:
+                        - generic: 2020-03
+                      - generic:
+                        - generic: 2020-05
+                      - generic:
+                        - generic: 2020-07
+                      - generic:
+                        - generic: 2020-09
+                      - generic:
+                        - generic: 2020-11
+                      - generic:
+                        - generic: 2021-01
+                      - generic:
+                        - generic: 2021-03
+                      - generic:
+                        - generic: 2021-05
+                      - generic:
+                        - generic: 2021-07
+                      - generic:
+                        - generic: 2021-09
+                      - generic:
+                        - generic: 2021-11
+                      - generic:
+                        - generic: 2022-01
+                      - generic:
+                        - generic: 2022-03
+                      - generic:
+                        - generic: 2022-05
+                      - generic:
+                        - generic: 2022-07
+                      - generic:
+                        - generic: 2022-09
+                      - generic:
+                        - generic: 2022-11
+                      - generic:
+                        - generic: 2023-01
+                      - generic:
+                        - generic: 2023-03
+                      - generic:
+                        - generic: 2023-05
+                      - generic:
+                        - generic: 2023-07
+                      - generic:
+                        - generic: 2023-09
+                      - generic:
+                        - generic: 2023-11
+                      - generic:
+                        - generic: 2024-01
+                      - generic:
+                        - generic: 2024-03
+                      - generic:
+                        - generic: 2024-05
+                      - generic:
+                        - generic: 2024-07
+                      - generic:
+                        - generic: 2024-09
+                      - generic:
+                        - generic: 2024-11
+                - generic:
+                  - generic: Vaccination Doses per 100 People (Animated by Month)
+                - generic:
+                  - generic: location
+                - generic:
+                  - generic: Doses per 100
+              - generic [ref=f56e21] [cursor=pointer]:
+                - generic [ref=f56e24]: ▶
+                - generic [ref=f56e27]: ◼
+            - toolbar [ref=f56e28]:
+              - button "Download plot as a PNG" [ref=f56e30] [cursor=pointer]:
+                - img [ref=f56e31]
+              - generic [ref=f56e33]:
+                - button "Zoom" [ref=f56e34] [cursor=pointer]:
+                  - img [ref=f56e35]
+                - button "Pan" [ref=f56e37] [cursor=pointer]:
+                  - img [ref=f56e38]
+                - button "Box Select" [ref=f56e40] [cursor=pointer]:
+                  - img [ref=f56e41]
+                - button "Lasso Select" [ref=f56e43] [cursor=pointer]:
+                  - img [ref=f56e44]
+              - generic [ref=f56e46]:
+                - button "Zoom in" [ref=f56e47] [cursor=pointer]:
+                  - img [ref=f56e48]
+                - button "Zoom out" [ref=f56e50] [cursor=pointer]:
+                  - img [ref=f56e51]
+                - button "Autoscale" [ref=f56e53] [cursor=pointer]:
+                  - img [ref=f56e54]
+                - button "Reset axes" [ref=f56e56] [cursor=pointer]:
+                  - img [ref=f56e57]
+              - link "plotly-logomark" [ref=f56e60] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f56e61]
+            - img
+          - img [ref=f56e74]
+  - link "4" [ref=e37] [cursor=pointer]:
+    - /url: "#/3"
+  - complementary:
+    - button "previous slide" [ref=e15] [cursor=pointer]
+    - button "next slide" [ref=e17] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e21]: Excess mortality vs reported deaths Excess mortality significantly exceeded official COVID deaths in early 2020, suggesting substantial under-counting in care homes and at-home deaths.

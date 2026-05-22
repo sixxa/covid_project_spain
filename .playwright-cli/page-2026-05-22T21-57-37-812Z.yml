@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - img:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Jan 2020
+            - generic:
+              - generic: Jul 2020
+            - generic:
+              - generic: Jan 2021
+            - generic:
+              - generic: Jul 2021
+            - generic:
+              - generic: Jan 2022
+            - generic:
+              - generic: Jul 2022
+            - generic:
+              - generic: Jan 2023
+            - generic:
+              - generic: Jul 2023
+            - generic:
+              - generic: Jan 2024
+            - generic:
+              - generic: Jul 2024
+          - generic:
+            - generic:
+              - generic: "0"
+            - generic:
+              - generic: 5k
+            - generic:
+              - generic: 10k
+            - generic:
+              - generic: 15k
+            - generic:
+              - generic: 20k
+            - generic:
+              - generic: 25k
+    - img:
+      - generic:
+        - generic [ref=e21]:
+          - generic [ref=e24]: Spain
+          - generic [ref=e28]: Poland
+        - generic:
+          - generic: "Daily COVID-19 Cases (7-day smoothed): Spain vs Poland"
+        - generic:
+          - generic: New cases
+    - toolbar [ref=e30]:
+      - button "Download plot as a PNG" [ref=e32] [cursor=pointer]:
+        - img [ref=e33]
+      - generic [ref=e35]:
+        - button "Zoom" [ref=e36] [cursor=pointer]:
+          - img [ref=e37]
+        - button "Pan" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]
+      - generic [ref=e42]:
+        - button "Zoom in" [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+        - button "Zoom out" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+        - button "Autoscale" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "Reset axes" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+      - link "plotly-logomark" [ref=e56] [cursor=pointer]:
+        - /url: https://plotly.com/
+        - img "plotly-logomark" [ref=e57]
+    - img
+  - img [ref=e70]

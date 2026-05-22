@@ -1,0 +1,336 @@
+- application [ref=e2]:
+  - generic:
+    - generic:
+      - heading [level=3]: Variant prevalence
+      - paragraph: Alpha dominated spring 2021, Delta replaced it by summer, and Omicron became dominant from January 2022. Omicron caused a massive case spike but with much lower severity per infection.
+      - iframe [ref=e18]:
+        - generic [active] [ref=f215e1]:
+          - generic [ref=f215e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2020"
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: 0%
+                    - generic:
+                      - generic: 20%
+                    - generic:
+                      - generic: 40%
+                    - generic:
+                      - generic: 60%
+                    - generic:
+                      - generic: 80%
+                    - generic:
+                      - generic: 100%
+            - img:
+              - generic:
+                - generic [ref=f215e21]:
+                  - generic [ref=f215e22]: variant
+                  - generic [ref=f215e25]: Alpha
+                  - generic [ref=f215e32]: Delta
+                  - generic [ref=f215e39]: Omicron
+                  - generic [ref=f215e46]: Other
+                - generic:
+                  - generic: Variant Prevalence in Spain
+                - generic:
+                  - generic: date
+                - generic:
+                  - generic: Share
+            - toolbar [ref=f215e51]:
+              - button "Download plot as a PNG" [ref=f215e53] [cursor=pointer]:
+                - img [ref=f215e54]
+              - generic [ref=f215e56]:
+                - button "Zoom" [ref=f215e57] [cursor=pointer]:
+                  - img [ref=f215e58]
+                - button "Pan" [ref=f215e60] [cursor=pointer]:
+                  - img [ref=f215e61]
+              - generic [ref=f215e63]:
+                - button "Zoom in" [ref=f215e64] [cursor=pointer]:
+                  - img [ref=f215e65]
+                - button "Zoom out" [ref=f215e67] [cursor=pointer]:
+                  - img [ref=f215e68]
+                - button "Autoscale" [ref=f215e70] [cursor=pointer]:
+                  - img [ref=f215e71]
+                - button "Reset axes" [ref=f215e73] [cursor=pointer]:
+                  - img [ref=f215e74]
+              - link "plotly-logomark" [ref=f215e77] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f215e78]
+            - img
+          - img [ref=f215e91]
+    - generic:
+      - heading [level=3]: Tourism collapse
+      - paragraph: International arrivals fell 66% in 2020 (135M → 46M). Tourism accounts for ~12% of Spain's GDP, amplifying the economic shock far beyond Poland's exposure.
+      - iframe [ref=e19]:
+        - generic [active] [ref=f216e1]:
+          - generic [ref=f216e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2019"
+                    - generic:
+                      - generic: "2020"
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: "0"
+                    - generic:
+                      - generic: "50"
+                    - generic:
+                      - generic: "100"
+                    - generic:
+                      - generic: "150"
+            - img:
+              - generic:
+                - generic:
+                  - generic: "Spain: Total Tourist Nights in All Accommodation (2019–2024)"
+                - generic:
+                  - generic: Tourist nights (millions)
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Eurostat tour_occ_arnat"
+            - toolbar [ref=f216e19]:
+              - button "Download plot as a PNG" [ref=f216e21] [cursor=pointer]:
+                - img [ref=f216e22]
+              - generic [ref=f216e24]:
+                - button "Zoom" [ref=f216e25] [cursor=pointer]:
+                  - img [ref=f216e26]
+                - button "Pan" [ref=f216e28] [cursor=pointer]:
+                  - img [ref=f216e29]
+                - button "Box Select" [ref=f216e31] [cursor=pointer]:
+                  - img [ref=f216e32]
+                - button "Lasso Select" [ref=f216e34] [cursor=pointer]:
+                  - img [ref=f216e35]
+              - generic [ref=f216e37]:
+                - button "Zoom in" [ref=f216e38] [cursor=pointer]:
+                  - img [ref=f216e39]
+                - button "Zoom out" [ref=f216e41] [cursor=pointer]:
+                  - img [ref=f216e42]
+                - button "Autoscale" [ref=f216e44] [cursor=pointer]:
+                  - img [ref=f216e45]
+                - button "Reset axes" [ref=f216e47] [cursor=pointer]:
+                  - img [ref=f216e48]
+              - link "plotly-logomark" [ref=f216e51] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f216e52]
+            - img
+          - img [ref=f216e65]
+    - generic [ref=e20]:
+      - 'heading "Unemployment: Spain vs Poland" [level=3] [ref=e21]'
+      - paragraph [ref=e22]: Spain's pre-pandemic unemployment (~14%) was already 3× Poland's rate; it peaked at 16.5% in 2020. Spain's ERTE furlough scheme kept people technically employed and cushioned the headline rise.
+      - iframe [ref=e24]:
+        - generic [active] [ref=f217e1]:
+          - generic [ref=f217e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "2019"
+                    - generic:
+                      - generic: "2020"
+                    - generic:
+                      - generic: "2021"
+                    - generic:
+                      - generic: "2022"
+                    - generic:
+                      - generic: "2023"
+                    - generic:
+                      - generic: "2024"
+                  - generic:
+                    - generic:
+                      - generic: "5"
+                    - generic:
+                      - generic: "10"
+                    - generic:
+                      - generic: "15"
+            - img:
+              - generic:
+                - generic [ref=f217e21]:
+                  - generic [ref=f217e24]: Spain
+                  - generic [ref=f217e28]: Poland
+                - generic:
+                  - generic: "Unemployment Rate: Spain vs Poland (2019–2024)"
+                - generic:
+                  - generic: Unemployment rate (%)
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "Source: Eurostat une_rt_m"
+            - toolbar [ref=f217e30]:
+              - button "Download plot as a PNG" [ref=f217e32] [cursor=pointer]:
+                - img [ref=f217e33]
+              - generic [ref=f217e35]:
+                - button "Zoom" [ref=f217e36] [cursor=pointer]:
+                  - img [ref=f217e37]
+                - button "Pan" [ref=f217e39] [cursor=pointer]:
+                  - img [ref=f217e40]
+              - generic [ref=f217e42]:
+                - button "Zoom in" [ref=f217e43] [cursor=pointer]:
+                  - img [ref=f217e44]
+                - button "Zoom out" [ref=f217e46] [cursor=pointer]:
+                  - img [ref=f217e47]
+                - button "Autoscale" [ref=f217e49] [cursor=pointer]:
+                  - img [ref=f217e50]
+                - button "Reset axes" [ref=f217e52] [cursor=pointer]:
+                  - img [ref=f217e53]
+              - link "plotly-logomark" [ref=f217e56] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f217e57]
+            - img
+          - img [ref=f217e70]
+    - generic:
+      - heading [level=3]: "SARIMA: train 2020–2022, predict 2023–2024"
+      - paragraph: Model trained before the endemic phase overestimates the endemic baseline — it learned the pandemic wave pattern without knowing the virus would transition to lower-intensity circulation.
+      - iframe [ref=e25]:
+        - generic [active] [ref=f218e1]:
+          - generic [ref=f218e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2023
+                    - generic:
+                      - generic: Jul 2023
+                    - generic:
+                      - generic: Jan 2024
+                    - generic:
+                      - generic: Jul 2024
+                  - generic:
+                    - generic:
+                      - generic: −2B
+                    - generic:
+                      - generic: −1.5B
+                    - generic:
+                      - generic: −1B
+                    - generic:
+                      - generic: −0.5B
+                    - generic:
+                      - generic: "0"
+            - img:
+              - generic:
+                - generic [ref=f218e21]:
+                  - generic [ref=f218e24]: 95% CI
+                  - generic [ref=f218e31]: Actual
+                  - generic [ref=f218e35]: Forecast (trained to 2022)
+                - generic:
+                  - generic: "SARIMA Forecast: Train 2020–2022, Predict 2023–2024"
+                - generic:
+                  - generic: Daily cases (smoothed)
+            - toolbar [ref=f218e37]:
+              - button "Download plot as a PNG" [ref=f218e39] [cursor=pointer]:
+                - img [ref=f218e40]
+              - generic [ref=f218e42]:
+                - button "Zoom" [ref=f218e43] [cursor=pointer]:
+                  - img [ref=f218e44]
+                - button "Pan" [ref=f218e46] [cursor=pointer]:
+                  - img [ref=f218e47]
+              - generic [ref=f218e49]:
+                - button "Zoom in" [ref=f218e50] [cursor=pointer]:
+                  - img [ref=f218e51]
+                - button "Zoom out" [ref=f218e53] [cursor=pointer]:
+                  - img [ref=f218e54]
+                - button "Autoscale" [ref=f218e56] [cursor=pointer]:
+                  - img [ref=f218e57]
+                - button "Reset axes" [ref=f218e59] [cursor=pointer]:
+                  - img [ref=f218e60]
+              - link "plotly-logomark" [ref=f218e63] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f218e64]
+            - img
+          - img [ref=f218e77]
+    - generic:
+      - heading [level=3]: "SARIMA: forecast sensitivity to training window"
+      - paragraph: Including 2023–2024 data in training substantially lowers the 2025 forecast. The gap between models shows how sensitive predictions are to the training window — the decline phase is load-bearing information.
+      - iframe [ref=e26]:
+        - generic [active] [ref=f219e1]:
+          - generic [ref=f219e5]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Jan 2025
+                    - generic:
+                      - generic: Mar 2025
+                    - generic:
+                      - generic: May 2025
+                    - generic:
+                      - generic: Jul 2025
+                    - generic:
+                      - generic: Sep 2025
+                    - generic:
+                      - generic: Nov 2025
+                  - generic:
+                    - generic:
+                      - generic: −8M
+                    - generic:
+                      - generic: −6M
+                    - generic:
+                      - generic: −4M
+                    - generic:
+                      - generic: −2M
+                    - generic:
+                      - generic: "0"
+            - img:
+              - generic:
+                - generic [ref=f219e21]:
+                  - generic [ref=f219e24]: 95% CI (2022 window)
+                  - generic [ref=f219e31]: 95% CI (2024 window)
+                  - generic [ref=f219e38]: "Train window: 2020–2022"
+                  - generic [ref=f219e42]: "Train window: 2020–2024"
+                - generic:
+                  - generic: "SARIMA 2025 Forecast: Sensitivity to Training Window"
+                - generic:
+                  - generic: Predicted daily cases
+            - toolbar [ref=f219e44]:
+              - button "Download plot as a PNG" [ref=f219e46] [cursor=pointer]:
+                - img [ref=f219e47]
+              - generic [ref=f219e49]:
+                - button "Zoom" [ref=f219e50] [cursor=pointer]:
+                  - img [ref=f219e51]
+                - button "Pan" [ref=f219e53] [cursor=pointer]:
+                  - img [ref=f219e54]
+              - generic [ref=f219e56]:
+                - button "Zoom in" [ref=f219e57] [cursor=pointer]:
+                  - img [ref=f219e58]
+                - button "Zoom out" [ref=f219e60] [cursor=pointer]:
+                  - img [ref=f219e61]
+                - button "Autoscale" [ref=f219e63] [cursor=pointer]:
+                  - img [ref=f219e64]
+                - button "Reset axes" [ref=f219e66] [cursor=pointer]:
+                  - img [ref=f219e67]
+              - link "plotly-logomark" [ref=f219e70] [cursor=pointer]:
+                - /url: https://plotly.com/
+                - img "plotly-logomark" [ref=f219e71]
+            - img
+          - img [ref=f219e84]
+  - link "14" [ref=e29] [cursor=pointer]:
+    - /url: "#/13"
+  - complementary:
+    - button "previous slide" [ref=e30] [cursor=pointer]
+    - button "next slide" [ref=e14] [cursor=pointer]
+  - text: Speaker notes
+  - generic [ref=e17]: "Unemployment: Spain vs Poland Spain's pre-pandemic unemployment (~14%) was already 3× Poland's rate; it peaked at 16.5% in 2020. Spain's ERTE furlough scheme kept people technically employed and cushioned the headline rise."

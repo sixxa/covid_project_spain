@@ -43,12 +43,20 @@ def main() -> None:
         zoom=4.3,
     )
     fig = apply_layout(fig, "Spain Regional Case Burden by Pandemic Wave", "Cases")
-    fig.update_layout(margin={"b": 140})
-    # Reposition animation controls so they stay within the iframe viewport
+    fig.update_layout(margin={"b": 160})
+    # Reposition animation controls so they stay within the iframe viewport.
+    # Put play/pause to the left of the slider on a row below, and hide the
+    # slider's currentvalue label (it overlapped the play/pause buttons).
     if fig.layout.updatemenus:
-        fig.layout.updatemenus[0].update(dict(x=0.05, xanchor="left", y=0, yanchor="top"))
+        fig.layout.updatemenus[0].update(dict(
+            x=0.0, xanchor="left", y=-0.18, yanchor="top",
+        ))
     if fig.layout.sliders:
-        fig.layout.sliders[0].update(dict(x=0.1, len=0.85, y=0, yanchor="top"))
+        fig.layout.sliders[0].update(dict(
+            x=0.08, len=0.88, y=-0.05, yanchor="top",
+            currentvalue=dict(visible=False),
+            pad=dict(t=20, b=10),
+        ))
     save_outputs(fig, SLUG)
 
 
