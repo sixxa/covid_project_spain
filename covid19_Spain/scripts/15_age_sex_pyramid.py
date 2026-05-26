@@ -26,6 +26,15 @@ def main() -> None:
         font={"size": 18},
         xaxis={"title": "Deaths (Male left / Female right)"},
         yaxis={"title": "Age group"},
+        legend={
+            "orientation": "h",
+            "yanchor": "bottom",
+            "y": 1.02,
+            "xanchor": "right",
+            "x": 1,
+            "font": {"size": 14},
+        },
+        margin={"l": 60, "r": 30, "t": 90, "b": 70},
     )
     save_outputs(fig, SLUG)
 

@@ -77,9 +77,11 @@ def main() -> None:
         template="plotly_white",
         title=title,
         font={"size": 18},
-        legend={"orientation": "h", "y": -0.2},
+        legend={"orientation": "h", "yanchor": "top", "y": -0.18,
+                "xanchor": "left", "x": 0},
+        margin={"l": 60, "r": 30, "t": 80, "b": 130},
         annotations=[{"text": f"Source: {source}", "xref": "paper", "yref": "paper",
-                       "x": 1, "y": -0.15, "showarrow": False, "font": {"size": 11}, "xanchor": "right"}],
+                       "x": 0, "y": -0.32, "showarrow": False, "font": {"size": 11}, "xanchor": "left"}],
     )
     fig.update_yaxes(title="Unemployment rate (%)")
     save_outputs(fig, SLUG)

@@ -40,8 +40,6 @@ def apply_layout(fig: go.Figure, title: str, y_title: str = "") -> go.Figure:
             "x": 0,
             "title": {"text": ""},
             "font": {"size": 14},
-            "entrywidth": 0,
-            "entrywidthmode": "pixels",
             "bgcolor": "rgba(255,255,255,0.85)",
         },
         hoverlabel={
@@ -70,7 +68,8 @@ def save_outputs(fig: go.Figure, slug: str) -> None:
     html_path = FIG_HTML / f"{slug}.html"
     pdf_path = FIG_STATIC / f"{slug}.pdf"
     png_path = FIG_STATIC / f"{slug}.png"
-    fig.write_html(html_path, include_plotlyjs="directory", full_html=True)
+    fig.write_html(html_path, include_plotlyjs="directory", full_html=True,
+                   config={"responsive": True})
     try:
         fig.write_image(pdf_path, format="pdf", scale=2)
         fig.write_image(png_path, format="png", scale=2, width=1600, height=900)

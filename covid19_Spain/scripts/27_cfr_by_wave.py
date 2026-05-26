@@ -52,10 +52,12 @@ def main() -> None:
         title="Case Fatality Rate by Wave: Spain vs Poland",
         barmode="group",
         font={"size": 16},
-        legend={"orientation": "h", "y": -0.25},
+        legend={"orientation": "h", "yanchor": "top", "y": -0.18,
+                "xanchor": "left", "x": 0},
+        margin={"l": 60, "r": 30, "t": 80, "b": 130},
         annotations=[{"text": "Source: Our World in Data · CFR = deaths / cases (smoothed totals per wave)",
-                       "xref": "paper", "yref": "paper", "x": 1, "y": -0.2,
-                       "showarrow": False, "font": {"size": 11}, "xanchor": "right"}],
+                       "xref": "paper", "yref": "paper", "x": 0, "y": -0.32,
+                       "showarrow": False, "font": {"size": 11}, "xanchor": "left"}],
     )
     fig.update_yaxes(title="CFR (%)")
     fig.update_xaxes(title="")
