@@ -30,7 +30,7 @@ To rebuild the poster from LaTeX: `cd poster && make` (needs `pdflatex` + `tikzp
 
 ## Statistical models used
 
-- **SARIMA (plots 21–22):** trained on 2020–2022, then retrained on 2020–2024 to see how the forecast changes when the epidemic decline is included. This split was suggested in the assignment brief.
+- **Prophet (plots 21–22):** trained on 2020–2022, then retrained on 2020–2024 to see how the forecast changes when the epidemic decline is included. Uses logistic growth with a floor of zero to prevent physically impossible negative predictions. This split was suggested in the assignment brief.
 - **Gompertz curve (plot 23):** fit to cumulative cases during the first wave — works well for epidemic growth that slows as the susceptible population shrinks.
 - **Lagged regression (plot 24):** OxCGRT stringency index lagged by ~14 days regressed against case growth rate, to test whether stricter measures actually preceded drops.
 - **Vaccine vs. CFR (plot 25):** scatter/trend of vaccination coverage against case fatality rate by period, showing the association between rollout and mortality drop.
@@ -59,8 +59,8 @@ To rebuild the poster from LaTeX: `cd poster && make` (needs `pdflatex` + `tikzp
 | 18 | `18_tourism_collapse.py` | International arrivals collapse in 2020 |
 | 19 | `19_unemployment_es_pl.py` | Unemployment rate — Spain vs Poland |
 | 20 | `20_regional_gdp_impact.py` | Regional GDP drop in 2020 |
-| 21 | `21_sarima_2020_2022.py` | SARIMA forecast trained on 2020–2022 |
-| 22 | `22_sarima_2020_2024.py` | SARIMA forecast trained on 2020–2024 |
+| 21 | `21_sarima_2020_2022.py` | Prophet forecast trained on 2020–2022 |
+| 22 | `22_sarima_2020_2024.py` | Prophet forecast sensitivity: 2020–2022 vs 2020–2024 |
 | 23 | `23_gompertz_first_wave.py` | Gompertz fit on first-wave cumulative cases |
 | 24 | `24_lag_regression_stringency.py` | Lagged regression: stringency → case growth |
 | 25 | `25_vaccine_vs_cfr.py` | Vaccination coverage vs case fatality rate |

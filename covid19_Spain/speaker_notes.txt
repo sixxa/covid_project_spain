@@ -113,16 +113,18 @@ employed and cushioned the headline number. Poland's labor market was more
 resilient due to lower services exposure.
 
 
-SLIDE 15 — SARIMA: train 2020–2022, predict 2023–2024
+SLIDE 15 — Prophet: train 2020–2022, predict 2023–2024
 ------------------------------------------------------
-We trained SARIMA on 2020-2022 and predicted 2023-2024. The model overestimates —
-it learned the pandemic wave pattern and extrapolated it, without knowing the virus
-was transitioning to lower-intensity endemic circulation. This is a feature, not a
-bug: it shows the model is doing what it's supposed to, given what it was shown.
+We trained a Prophet model on 2020-2022 and predicted 2023-2024. The model
+overestimates — it learned the pandemic wave pattern and extrapolated it, without
+knowing the virus was transitioning to lower-intensity endemic circulation. This is
+a feature, not a bug: it shows the model is doing what it's supposed to, given what
+it was shown. We use Prophet rather than SARIMA because Prophet's logistic growth
+constraint prevents physically impossible negative forecasts.
 
 
-SLIDE 16 — SARIMA: forecast sensitivity to training window
------------------------------------------------------------
+SLIDE 16 — Prophet: forecast sensitivity to training window
+------------------------------------------------------------
 Retraining on the full 2020-2024 data gives a substantially lower 2025 forecast.
 The gap between the two models shows how sensitive predictions are to the training
 window — the decline phase is load-bearing information. This is the core
@@ -151,5 +153,5 @@ Spain had sharp early waves, strong regional heterogeneity, and an economy
 unusually exposed to the tourism shock. Official counts understate the real toll —
 excess mortality and positivity data are essential context. Vaccination clearly
 reduced mortality, though Omicron's lower intrinsic severity is a confound.
-And the SARIMA training window substantially changes the forecast — that's
+And the Prophet training window substantially changes the forecast — that's
 the core methodological point. Thank you.

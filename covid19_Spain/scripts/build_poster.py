@@ -221,11 +221,12 @@ def main() -> None:
     ax = fig.add_subplot(gs[9:14, RIGHT]); add_image(ax, FIG_DIR / "22_sarima_2020_2024.png")
     ax = fig.add_subplot(gs[14:17, RIGHT])
     caption(ax,
-        "SARIMA forecast of weekly cases. Top panel: model trained on "
+        "Prophet forecast of daily cases. Top panel: model trained on "
         "2020–2022 only — it cannot 'see' the post-Omicron endemic "
         "decline and overshoots dramatically. Bottom panel: the same "
         "specification trained on 2020–2024 produces a plausible flat "
-        "endemic baseline. Same model, very different conclusions.\n\n"
+        "endemic baseline. Same model, very different conclusions. "
+        "Prophet's logistic growth floor prevents negative predictions.\n\n"
         "Take-away: for a disease in transition from epidemic to endemic, "
         "training-window choice dominates model choice. We report both "
         "windows deliberately rather than picking the one that 'looks right'.")
@@ -241,7 +242,7 @@ def main() -> None:
         "into a record economic contraction (-11% GDP in 2020).\n\n"
         "•  Vaccination cut the case-fatality rate by more than an order "
         "of magnitude between waves 3 and 5.\n\n"
-        "•  SARIMA forecasts are highly sensitive to training-window "
+        "•  Prophet forecasts are highly sensitive to training-window "
         "choice — a methodological caution, not a model failure.",
         width=46, size=21,
     )

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 import plotly.graph_objects as go
-from statsmodels.tsa.statespace.sarimax import SARIMAX
+from prophet import Prophet
 
 from _common import load_owid, save_outputs, save_processed
 
@@ -14,40 +14,48 @@ def main() -> None:
     sp = (
         df[df["location"] == "Spain"][["date", "new_cases_smoothed"]]
         .dropna()
-        .set_index("date")
-        .asfreq("D")
-        .ffill()
+        .rename(columns={"date": "ds", "new_cases_smoothed": "y"})
     )
-    train = sp.loc[:"2022-12-31", "new_cases_smoothed"]
-    model = SARIMAX(
-        train, order=(1, 1, 1), seasonal_order=(1, 0, 1, 7),
-        enforce_stationarity=False, enforce_invertibility=False,
-    )
-    fitted = model.fit(disp=False)
+    sp["ds"] = pd.to_datetime(sp["ds"])
+    sp["floor"] = 0.0
+    sp["cap"] = sp["y"].max() * 2
 
-    forecast_idx = pd.date_range("2023-01-01", "2024-12-31", freq="D")
-    pred = fitted.get_forecast(steps=len(forecast_idx))
-    ci = pred.conf_int()
-    lower = ci.iloc[:, 0].values
-    upper = ci.iloc[:, 1].values
+    train = sp[sp["ds"] <= "2022-12-31"].copy()
+
+    model = Prophet(
+        growth="logistic",
+        yearly_seasonality=True,
+        weekly_seasonality=True,
+        daily_seasonality=False,
+        interval_width=0.95,
+    )
+    model.fit(train)
+
+    future = pd.date_range("2023-01-01", "2024-12-31", freq="D")
+    future_df = pd.DataFrame({"ds": future})
+    future_df["floor"] = 0.0
+    future_df["cap"] = train["cap"].iloc[0]
+
+    forecast = model.predict(future_df)
+
+    actual = sp[sp["ds"].between("2023-01-01", "2024-12-31")].set_index("ds")["y"]
 
     out = pd.DataFrame({
-        "date": forecast_idx,
-        "prediction": pred.predicted_mean.values,
-        "actual": sp.loc[forecast_idx, "new_cases_smoothed"].values,
-        "ci_lower": lower,
-        "ci_upper": upper,
+        "date": future,
+        "prediction": forecast["yhat"].clip(lower=0).values,
+        "ci_lower": forecast["yhat_lower"].clip(lower=0).values,
+        "ci_upper": forecast["yhat_upper"].clip(lower=0).values,
+        "actual": actual.reindex(future).values,
     })
     save_processed(out, SLUG)
 
     fig = go.Figure()
-    # Confidence band (drawn first so lines appear on top)
     fig.add_trace(go.Scatter(
-        x=list(forecast_idx) + list(forecast_idx[::-1]),
-        y=list(upper) + list(lower[::-1]),
+        x=list(future) + list(future[::-1]),
+        y=list(out["ci_upper"]) + list(out["ci_lower"][::-1]),
         fill="toself", fillcolor="rgba(77,77,77,0.15)",
         line={"color": "rgba(0,0,0,0)"},
-        name="95% CI", showlegend=True,
+        name="95% CI",
     ))
     fig.add_trace(go.Scatter(
         x=out["date"], y=out["actual"],
@@ -59,11 +67,11 @@ def main() -> None:
     ))
     fig.update_layout(
         template="plotly_white",
-        title="SARIMA Forecast: Train 2020–2022, Predict 2023–2024",
+        title="Prophet Forecast: Train 2020–2022, Predict 2023–2024",
         font={"size": 18},
         legend={"orientation": "h", "y": -0.2},
     )
-    fig.update_yaxes(title="Daily cases (smoothed)")
+    fig.update_yaxes(title="Daily cases (smoothed)", rangemode="tozero")
     save_outputs(fig, SLUG)
 
 

@@ -148,11 +148,12 @@ historic economic shock.
 }
 
 \block{Inferential: forecasts depend on what you train on}{
-\begin{tikzfigure}[SARIMA forecast of weekly cases. \emph{Top:} model trained
+\begin{tikzfigure}[Prophet forecast of daily cases. \emph{Top:} model trained
   on 2020--2022 only --- it cannot ``see'' the post-Omicron endemic decline
   and overshoots dramatically. \emph{Bottom:} the same specification trained
   on 2020--2024 produces a plausible flat endemic baseline. Same model, very
-  different conclusions.]
+  different conclusions. Prophet's logistic growth floor prevents negative
+  predictions.]
 \includegraphics[width=0.95\linewidth]{../figures/static/22_sarima_2020_2024.pdf}
 \end{tikzfigure}
 
@@ -174,7 +175,7 @@ deliberately rather than picking the one that ``looks right''.
         record economic contraction (-11\% GDP in 2020).
   \item Vaccination cut the case-fatality rate by more than an order of
         magnitude between waves 3 and 5.
-  \item SARIMA forecasts are highly sensitive to training-window choice ---
+  \item Prophet forecasts are highly sensitive to training-window choice ---
         a methodological caution, not a model failure.
 \end{itemize}
 }

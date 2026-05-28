@@ -138,16 +138,16 @@
           <div class="embed-container"><iframe data-src="../figures/html/19_unemployment_es_pl.html?v=1779823576"></iframe></div>
         </section>
 
-        <!-- 15. SARIMA: train 2020–2022 -->
+        <!-- 15. Prophet: train 2020–2022 -->
         <section>
-          <h3>SARIMA: train 2020–2022, predict 2023–2024</h3>
-          <p class="small">Model trained before the endemic phase overestimates the endemic baseline — it learned the pandemic wave pattern without knowing the virus would transition to lower-intensity circulation.</p>
+          <h3>Prophet: train 2020–2022, predict 2023–2024</h3>
+          <p class="small">Model trained before the endemic phase overestimates the endemic baseline — it learned the pandemic wave pattern without knowing the virus would transition to lower-intensity circulation. Prophet's logistic growth cap prevents physically impossible negative predictions.</p>
           <div class="embed-container"><iframe data-src="../figures/html/21_sarima_2020_2022.html?v=1779823576"></iframe></div>
         </section>
 
-        <!-- 16. SARIMA: forecast sensitivity -->
+        <!-- 16. Prophet: forecast sensitivity -->
         <section>
-          <h3>SARIMA: forecast sensitivity to training window</h3>
+          <h3>Prophet: forecast sensitivity to training window</h3>
           <p class="small">Including 2023–2024 data in training substantially lowers the 2025 forecast. The gap between models shows how sensitive predictions are to the training window — the decline phase is load-bearing information.</p>
           <div class="embed-container"><iframe data-src="../figures/html/22_sarima_2020_2024.html?v=1779823576"></iframe></div>
         </section>
@@ -172,7 +172,7 @@
           <ul>
             <li>Spain's waves were sharper and regionally heterogeneous — Madrid and Catalonia were hit earliest and hardest.</li>
             <li>Excess mortality reveals significant under-counting; high test positivity compounds the uncertainty.</li>
-            <li>Vaccination reduced CFR; SARIMA forecast is highly sensitive to whether the decline phase is included in training.</li>
+            <li>Vaccination reduced CFR; Prophet forecast is highly sensitive to whether the decline phase is included in training.</li>
             <li>Spain's tourism-dependent economy (~12% of GDP) amplified the socio-economic shock relative to Poland.</li>
           </ul>
           <p class="small">Data: OWID · ISCIII · OxCGRT · Google Mobility · Eurostat · OWID Variants</p>
