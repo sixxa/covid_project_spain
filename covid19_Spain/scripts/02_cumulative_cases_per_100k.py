@@ -9,7 +9,7 @@ SLUG = "02_cumulative_cases_per_100k"
 
 def main() -> None:
     df = load_owid()
-    view = df[df["location"].isin(["Spain", "Poland", "European Union"])][["date", "location", "total_cases_per_million"]].dropna()
+    view = df[df["location"].isin(["Spain", "Poland", "European Union (27)"])][["date", "location", "total_cases_per_million"]].dropna()
     view["cases_per_100k"] = view["total_cases_per_million"] / 10
     out = view[["date", "location", "cases_per_100k"]]
     save_processed(out, SLUG)
@@ -21,7 +21,7 @@ def main() -> None:
         color_discrete_map={
             "Spain": PALETTE["spain"],
             "Poland": PALETTE["poland"],
-            "European Union": PALETTE["neutral"],
+            "European Union (27)": PALETTE["neutral"],
         },
     )
     fig.update_layout(template="plotly_white", title="Cumulative Cases per 100k: Spain vs Poland vs EU", font={"size": 18})

@@ -7,11 +7,19 @@ from _common import load_variants, save_outputs, save_processed
 SLUG = "17_variant_prevalence"
 
 
+_ORDER = ["Alpha", "Delta", "Omicron", "Other"]
+_COLORS = {"Alpha": "#0057B8", "Delta": "#F1BF00", "Omicron": "#AA151B", "Other": "#9CA3AF"}
+
+
 def main() -> None:
     df = load_variants()
     sp = df[df["location"] == "Spain"][["date", "variant", "perc"]].dropna()
     save_processed(sp, SLUG)
-    fig = px.area(sp, x="date", y="perc", color="variant", title="Variant Prevalence in Spain")
+    fig = px.area(
+        sp, x="date", y="perc", color="variant",
+        category_orders={"variant": _ORDER}, color_discrete_map=_COLORS,
+        title="SARS-CoV-2 Variant Prevalence in Spain (CoVariants / GISAID)",
+    )
     fig.update_layout(
         template="plotly_white",
         font={"size": 18},

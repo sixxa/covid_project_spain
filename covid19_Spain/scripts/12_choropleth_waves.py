@@ -10,14 +10,17 @@ from _common import DATA_RAW, apply_layout, load_isciii, save_outputs, save_proc
 SLUG = "12_choropleth_waves"
 
 
+# ISCIII province-level data runs Jan 2020 – Mar 2022, so the buckets cover that span.
 def wave_label(date: pd.Timestamp) -> str:
+    if date < pd.Timestamp("2020-07-01"):
+        return "2020 H1 (first wave)"
     if date < pd.Timestamp("2021-01-01"):
-        return "Wave_2020"
+        return "2020 H2"
+    if date < pd.Timestamp("2021-07-01"):
+        return "2021 H1"
     if date < pd.Timestamp("2022-01-01"):
-        return "Wave_2021"
-    if date < pd.Timestamp("2023-01-01"):
-        return "Wave_2022"
-    return "Wave_2023_2024"
+        return "2021 H2 (Delta)"
+    return "2022 (Omicron)"
 
 
 def main() -> None:

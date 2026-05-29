@@ -1,10 +1,9 @@
 from __future__ import annotations
 
-import numpy as np
 import pandas as pd
 import plotly.express as px
 
-from _common import DATA_RAW, load_isciii, save_outputs, save_processed
+from _common import DATA_RAW, require_nonempty, save_outputs, save_processed
 
 SLUG = "20_regional_gdp_impact"
 
@@ -19,50 +18,27 @@ _NUTS2_NAMES = {
 }
 
 
-def _load_real() -> pd.DataFrame | None:
-    path = DATA_RAW / "eurostat_regional_gdp.csv"
-    if not path.exists():
-        return None
-    try:
-        df = pd.read_csv(path)
-        if "TIME_PERIOD" not in df.columns or "OBS_VALUE" not in df.columns:
-            return None
-        df["year"] = pd.to_numeric(df["TIME_PERIOD"].astype(str).str[:4], errors="coerce")
-        es_nuts2 = list(_NUTS2_NAMES.keys())
-        df = df[df["geo"].isin(es_nuts2)].dropna(subset=["year", "OBS_VALUE"])
-        if df.empty:
-            return None
-        pivot = df.pivot_table(index="geo", columns="year", values="OBS_VALUE", aggfunc="sum")
-        if 2019 not in pivot.columns or 2020 not in pivot.columns:
-            return None
-        result = pd.DataFrame({
-            "geo": pivot.index,
-            "gdp_change_2020_pct": (pivot[2020] / pivot[2019] - 1) * 100,
-        }).reset_index(drop=True)
-        result["comunidad_autonoma"] = result["geo"].map(_NUTS2_NAMES)
-        return result[["comunidad_autonoma", "gdp_change_2020_pct"]].dropna().sort_values("gdp_change_2020_pct")
-    except Exception:
-        return None
-
-
-def _make_synthetic() -> pd.DataFrame:
-    df = load_isciii()
-    burden = df.groupby("comunidad_autonoma", as_index=False)["num_casos"].sum()
-    burden["burden_scaled"] = burden["num_casos"] / burden["num_casos"].max()
-    burden["gdp_change_2020_pct"] = -4 - burden["burden_scaled"] * 7 + np.linspace(-0.5, 0.5, len(burden))
-    return burden[["comunidad_autonoma", "gdp_change_2020_pct"]].sort_values("gdp_change_2020_pct")
+def _load_real() -> pd.DataFrame:
+    """Real Eurostat nama_10r_2gdp: regional GDP (MIO_EUR), % change 2020 vs 2019."""
+    df = pd.read_csv(DATA_RAW / "eurostat_regional_gdp.csv")
+    df["year"] = pd.to_numeric(df["TIME_PERIOD"].astype(str).str[:4], errors="coerce")
+    df = df[
+        (df["geo"].isin(_NUTS2_NAMES))
+        & (df["unit"] == "MIO_EUR")   # absolute GDP in million euro (the file mixes several units)
+    ].dropna(subset=["year", "OBS_VALUE"])
+    pivot = df.pivot_table(index="geo", columns="year", values="OBS_VALUE", aggfunc="sum")
+    result = pd.DataFrame({
+        "geo": pivot.index,
+        "gdp_change_2020_pct": (pivot[2020] / pivot[2019] - 1) * 100,
+    }).reset_index(drop=True)
+    result["comunidad_autonoma"] = result["geo"].map(_NUTS2_NAMES)
+    return result[["comunidad_autonoma", "gdp_change_2020_pct"]].dropna().sort_values("gdp_change_2020_pct")
 
 
 def main() -> None:
-    real = _load_real()
-    if real is not None:
-        out = real.copy()
-        title = "Regional GDP Change 2020 vs 2019 (NUTS-2, Eurostat)"
-        source = "Eurostat nama_10r_2gdp"
-    else:
-        out = _make_synthetic()
-        title = "Estimated Regional GDP Change in 2020 (CCAA)"
-        source = "Modelled from ISCIII case burden (Eurostat unavailable)"
+    out = require_nonempty(_load_real(), "Eurostat regional GDP").copy()
+    title = "Regional GDP Change 2020 vs 2019 (NUTS-2, Eurostat)"
+    source = "Eurostat nama_10r_2gdp"
 
     save_processed(out, SLUG)
     fig = px.bar(

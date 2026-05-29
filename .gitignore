@@ -3,3 +3,8 @@ __pycache__/
 .DS_Store
 *.egg-info/
 .env
+
+# Large raw source data — regenerate locally with `python scripts/00_fetch_data.py`.
+# (Processed CSVs and figures are committed; raw files are big and reproducible.)
+covid19_Spain/data/raw/
+.venv/

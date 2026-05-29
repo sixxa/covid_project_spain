@@ -19,13 +19,19 @@ To rebuild the poster from LaTeX: `cd poster && make` (needs `pdflatex` + `tikzp
 
 ## Data sources
 
+Every chart is built from real, citable upstream data, fetched by `scripts/00_fetch_data.py`.
+**There is no synthetic/mock fallback:** if a source is unreachable the fetch script prints a
+clear error and exits non-zero, so the pipeline can never silently present invented numbers.
+
 | Dataset | Source |
 |---|---|
-| Cases, deaths, vaccinations | [Our World in Data](https://covid.ourworldindata.org/data/owid-covid-data.csv) |
-| Spain regional data (CCAA, age, sex) | [ISCIII](https://cnecovid.isciii.es/covid19/resources/casos_hosp_uci_def_sexo_edad_provres.csv) |
+| Cases, deaths, vaccinations, stringency, excess mortality, R(t) | [Our World in Data](https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv) (GitHub mirror of the full dataset) |
+| Spain regional data (province → CCAA, age, sex; Jan 2020 – Mar 2022) | [ISCIII](https://cnecovid.isciii.es/covid19/resources/casos_hosp_uci_def_sexo_edad_provres.csv) |
 | Government policy stringency | [OxCGRT](https://github.com/OxCGRT/covid-policy-tracker) |
-| Google mobility | [ActiveConclusion mirror](https://github.com/ActiveConclusion/COVID19_mobility) |
-| Variant prevalence | [OWID variants](https://github.com/owid/covid-19-data/tree/master/public/data/variants) |
+| Google mobility (country level, Spain & Poland) | [ActiveConclusion mirror](https://github.com/ActiveConclusion/COVID19_mobility) |
+| Variant / clade prevalence | [CoVariants](https://github.com/hodcroftlab/covariants) (GISAID-derived) |
+| Vaccination coverage by age group | [ECDC COVID-19 Vaccine Tracker](https://opendata.ecdc.europa.eu/covid19/vaccine_tracker/) |
+| Unemployment, tourism nights, regional GDP | [Eurostat](https://ec.europa.eu/eurostat) (`une_rt_m`, `tour_occ_arnat`, `nama_10r_2gdp`) |
 | Spain regions GeoJSON | [click_that_hood](https://github.com/codeforgermany/click_that_hood) |
 
 ## Statistical models used

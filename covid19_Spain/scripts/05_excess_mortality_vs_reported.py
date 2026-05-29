@@ -9,14 +9,24 @@ SLUG = "05_excess_mortality"
 
 def main() -> None:
     df = load_owid()
-    es = df[df["location"] == "Spain"][["date", "new_deaths", "excess_mortality"]].dropna()
-    es["excess_proxy"] = es["excess_mortality"]
-    out = es[["date", "new_deaths", "excess_proxy"]]
-    save_processed(out, SLUG)
+    # Compare like with like: cumulative ESTIMATED excess deaths vs cumulative REPORTED
+    # COVID deaths (both absolute counts). The gap is the undercount.
+    es = df[df["location"] == "Spain"][
+        ["date", "total_deaths", "excess_mortality_cumulative_absolute"]
+    ].copy()
+    reported = es[["date", "total_deaths"]].dropna()
+    excess = es[["date", "excess_mortality_cumulative_absolute"]].dropna()
+    save_processed(
+        es.dropna(subset=["total_deaths", "excess_mortality_cumulative_absolute"], how="all"),
+        SLUG,
+    )
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=out["date"], y=out["new_deaths"], mode="lines", name="Reported COVID deaths", line={"color": "#AA151B"}))
-    fig.add_trace(go.Scatter(x=out["date"], y=out["excess_proxy"], mode="lines", name="Excess mortality proxy", line={"color": "#4D4D4D"}))
-    fig = apply_layout(fig, "Spain: Excess Mortality vs Reported COVID-19 Deaths", "Daily deaths")
+    fig.add_trace(go.Scatter(x=reported["date"], y=reported["total_deaths"], mode="lines",
+                             name="Reported COVID deaths (cumulative)", line={"color": "#AA151B"}))
+    fig.add_trace(go.Scatter(x=excess["date"], y=excess["excess_mortality_cumulative_absolute"],
+                             mode="lines", name="Estimated excess deaths (cumulative)",
+                             line={"color": "#4D4D4D"}))
+    fig = apply_layout(fig, "Spain: Excess Mortality vs Reported COVID-19 Deaths", "Cumulative deaths")
     save_outputs(fig, SLUG)
 
 

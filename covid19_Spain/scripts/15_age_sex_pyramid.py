@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import pandas as pd
 import plotly.graph_objects as go
 
 from _common import load_isciii, save_outputs, save_processed
@@ -7,11 +8,17 @@ from _common import load_isciii, save_outputs, save_processed
 SLUG = "15_age_sex_pyramid"
 
 
+AGE_ORDER = ["0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80+"]
+
+
 def main() -> None:
     df = load_isciii()
+    df = df[df["grupo_edad"].isin(AGE_ORDER)]
     agg = df.groupby(["grupo_edad", "sexo"], as_index=False)["num_def"].sum()
-    males = agg[agg["sexo"] == "M"].copy()
-    females = agg[agg["sexo"] == "F"].copy()
+    agg["grupo_edad"] = pd.Categorical(agg["grupo_edad"], categories=AGE_ORDER, ordered=True)
+    agg = agg.sort_values("grupo_edad")
+    males = agg[agg["sexo"] == "Male"].copy()
+    females = agg[agg["sexo"] == "Female"].copy()
     males["num_def"] = -males["num_def"]
     out = agg.copy()
     save_processed(out, SLUG)

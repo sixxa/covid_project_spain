@@ -9,14 +9,7 @@ SLUG = "11_mobility_lockdown"
 
 def main() -> None:
     df = load_mobility()
-    sp = df[(df["country_region"] == "Spain") & (df["sub_region_1"].isna())].copy()
-    sp = sp.rename(
-        columns={
-            "retail_and_recreation_percent_change_from_baseline": "retail",
-            "transit_stations_percent_change_from_baseline": "transit",
-            "workplaces_percent_change_from_baseline": "workplaces",
-        }
-    )
+    sp = df[df["country_region"] == "Spain"].copy().sort_values("date")
     out = sp[["date", "retail", "transit", "workplaces"]]
     save_processed(out, SLUG)
     long_df = out.melt(id_vars="date", var_name="metric", value_name="pct_change")
